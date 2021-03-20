@@ -1,0 +1,41 @@
+weapons:
+Stiletto
+Main-Gauche
+Mace
+Spear
+Battleaxe
+Hand Crossbow
+Halberd
+Claymore
+
+shields:
+Kite Shield
+Round Shield
+
+armor:
+Guard's Set
+Heavy Guard's Set
+Colorful Leather Set
+
+rings:
+Bloodstone Ring
+
+catalysts:
+Ornate Wand
+
+missiles:
+
+misc:
+Throwing Knives
+Quiver
+Asbestos Powder
+Turpentine
+Bandages
+Queergrass Poultice
+
+attunements:
+Leaf Stance
+Slink
+Praise
+Enchant Shield
+Dazzle

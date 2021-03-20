@@ -1,0 +1,59 @@
+%SETTINGS
+\setlength{\columnsep}{2em}
+\setcellgapes{12pt}
+
+%COMMANDS
+\newcommand{\makeref}[1]{\hypertarget{#1}{\textbf{#1}}}
+\newcommand{\makerefit}[1]{\hypertarget{#1}{\emph{#1}}}
+\newcommand{\makerefn}[1]{\hypertarget{#1}{#1}}
+
+\newcommand{\refto}[1]{\hyperlink{#1}{\textbf{#1}}}
+\newcommand{\reftoit}[1]{\hyperlink{#1}{\emph{#1}}}
+\newcommand{\refton}[1]{\hyperlink{#1}{#1}}
+
+\newcommand{\encountersection}[3]{
+	\pagebreak
+	\hypertarget{#1#2}{\subsection*{#1#2\hfill #3}\label{#1#2}}
+	\input{chapsections/#1/#2}
+	\pagebreak
+}
+
+\newcommand{\chapsection}[3]{
+	{\hypertarget{#1#2}{}}
+	\begin{tcolorbox}
+	[colback=gray!5!white,colframe=gray!75!black,title=\subsection*{#1#2\hfill #3}\label{#1#2}]
+	\input{chapsections/#1/#2}
+	\end{tcolorbox}
+}
+
+\newcommand{\turnto}[1]{\hyperlink{#1}{\textbf{Turn to Page:} \pageref*{#1}:#1}}
+
+\newcommand{\makefellow}[1]{\hypertarget{#1}{\subsection{#1}}}
+\newcommand{\fellow}[1]{\hyperlink{#1}{> \textbf{Fellow:} #1}}
+
+\newcommand{\requires}[1]{>> \emph{#1:}}
+\newcommand{\requiresx}[1]{> \emph{#1:}}
+
+\newcommand{\makeitem}[1]{#1\hypertarget{#1}{}\label{#1}}
+\newcommand{\gain}[1]{> \textbf{Gain:} \hyperlink{#1}{#1 (Page: \pageref*{#1})}}
+\newcommand{\gainx}[1]{>> \textbf{Gain:} \hyperlink{#1}{#1 (Page: \pageref*{#1})}}
+
+\newcommand{\notegain}[1]{>> \textbf{Mark #1} --}
+\newcommand{\notegainx}[1]{\textbf{Mark #1} --}
+
+\def\lisp{{\footnotesize \emph{th}}}
+\def\lispx{{\footnotesize \emph{th }}}
+
+\makeatletter
+\@ifundefined{c@rownum}{%
+  \let\c@rownum\rownum
+}{}
+\@ifundefined{therownum}{%
+  \def\therownum{\@arabic\rownum}%
+}{}
+\makeatother
+
+%COLUMNS
+\newcolumntype{L}{>{\raggedright\arraybackslash}m{5cm}}
+\newcolumntype{s}{>{\raggedright\arraybackslash}m{3cm}}
+\newcolumntype{C}{>{\centering\arraybackslash}m{5cm}}

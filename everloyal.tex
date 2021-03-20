@@ -1,0 +1,681 @@
+\documentclass[12pt]{article}
+
+\title{Everloyal}
+\author{John Conway}
+
+%PACKAGES
+\usepackage[utf8]{inputenc}    
+\usepackage[T1]{fontenc}
+\usepackage[table]{xcolor}
+\usepackage{ebgaramond}
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.5in]{geometry}
+\usepackage{tcolorbox}    
+\usepackage{sectsty}
+\usepackage{tikz}    
+\usepackage{graphicx}
+\usepackage{framed}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage{tocloft}
+\usepackage{pbox}
+\usepackage{tabularx}
+\usepackage{eso-pic,graphicx}
+\usepackage{makecell}
+
+\input{misc/settings}
+
+%DOCUMENT
+\begin{document}
+\hbadness=10001
+\hfuzz=10001pt
+\newpage 
+\thispagestyle{empty}
+\pagenumbering{gobble}
+\includepdf{misc/cover.png}
+
+\newpage
+
+\AddToShipoutPictureBG{\includegraphics[width=\paperwidth,height=\paperheight]{misc/background.pdf}}
+\setlength\parindent{0pt}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\begin{center}
+\ \\
+\ \\
+\addcontentsline{toc}{section}{Introduction}
+{\Huge GRAN  SELIDORE...}\\
+\ \\
+\ \\
+\ \\
+{\Large The Laurelled City\\
+Brass Rose of the Vyl Coast\\
+The Sheen of its Domed Towers now Dulled by\\
+\textbf{Unabating Fog}\\
+\ \\
+Stripped of his Memories\\
+Mankind Maunders as if Dreaming\\
+With Emptied Eyes and\\
+\textbf{Hollowed Souls}\\
+\ \\
+The Malediction\\
+A Curse Laid Upon the Land\\
+For the Failed Resurrection of a\\
+\textbf{Dead God}\\
+\ \\
+Once-Risen and Twice-Slain\\
+The King of all Secrets\\
+Worshipped by the Forbidden Name of\\
+\textbf{Av*rn-Z*l}\\
+\ \\
+Locked Away\\
+In a Secluded Prison\\
+Await Those who Bear the Sign of His...\\
+\ \\
+\ \\
+{\Huge \textbf{E V E R L O Y A L}}\
+}
+\end{center}
+
+\pagebreak
+
+\begin{multicols*}{2}
+
+\renewcommand*\contentsname{Table of Contents}
+\hypersetup{hidelinks}
+\tableofcontents
+\addcontentsline{toc}{section}{Table of Contents}
+\subsubsection*{And Attached Sheets...}
+\vfill
+
+\pagebreak
+
+% DELETE BELOW %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{multicols*}
+
+\vspace*{\fill}
+
+\begin{center}
+{\Large \textbf{Note:}
+This is a playtest release that only includes the initial, tutorial chapter.\\
+System mechanics and sections of the tutorial chapter will likely change in the final version.\\
+}
+\end{center}
+
+\vspace*{\fill}
+
+\pagebreak
+
+\begin{multicols*}{2}
+
+% DELETE ABOVE %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Scenario}
+\emph{Everloyal} is the companion scenario to be released alongside the first edition of \emph{Fires Far Away: A Solitaire Journey}. It is intended to be a player’s first experience with the system. Owing to this, the scenario contains an initial, tutorial chapter for easing players into the system as a whole. Other scenarios aren’t likely to implement a tutorial chapter unless they have significantly altered the system’s mechanics.
+
+\subsection{Scenario Setup}
+Ensure the following game materials are available:
+
+\begin{itemize}
+\item The corebook
+\item Pencil(s) and an eraser
+\item At least 8 six-sided dice
+\item A pack of index cards or scratch paper
+\item A bowl of coins, beads, or other small and discrete tokens (for damage, charges, etc)
+\item Printed copies of the character, status, and record sheets (found at the end of this scenario book)
+\item 3 double-sided copies of the Hexagon-Tiled Map (from the corebook)
+\item Optionally: the encounter reference sheet (from the corebook)
+\end{itemize}
+
+Then complete the following steps:
+
+\begin{enumerate}
+\item Gather 6 blank index cards
+\item Mark each card with one of the following chapter symbols: a \textbf{circle}; a \textbf{skull}; a domed \textbf{tower}; two crossed \textbf{arrows}; an \textbf{owl}; and an \textbf{eye} with a slit pupil 
+\item Set the \textbf{circle} and \textbf{skull} cards aside
+\item Shuffle the remaining 4 cards facedown
+\item Place the \textbf{circle} card atop the deck, facedown
+\end{enumerate}
+
+Afterwards, the chapter deck should consist of four cards in random order, with the \textbf{circle} card on top and the \textbf{skull} card set aside.
+\begin{tcolorbox}
+\textbf{Note:} The \emph{prestige} is not technically a chapter, and so it does not require a chapter card.
+\end{tcolorbox}
+Once the game materials are gathered and the chapter deck is ready, it’s time to create a character.\\
+\ \\
+\hyperlink{chargen}{\textbf{Turn to: Character Creation (Page \pageref{chargen}})}
+
+\subsection{Scenario Resolution}
+\label{scenres}\hypertarget{scenres}{}
+After the character creation process is complete--and the character, record, and status sheets have been finalized-- begin drawing cards from the chapter deck and resolving their chapters.\\
+To resolve a chapter, turn to its starting page (listed below). Continue through each chapter until the \textbf{End Chapter} instruction is encountered (either through victory over the chapter, or suffering a fatal defeat).\\
+When the \textbf{End Chapter} instruction is encountered, erase all \emph{Ephemeral} items from the character sheet and stash. Next, clear any conditions and damage unless specifically instructed otherwise. Then erase any notes that are not bracketed by exclamation marks like: \emph{!!Note!!} Finally, draw the next chapter card and turn to its starting page.\\
+After resolving the last card in the chapter deck, turn to the \emph{prestige’s} starting page for the scenario finale.\\
+\ \\
+\textbf{Chapter Starting Pages:}
+\begin{itemize}
+\item \textbf{Circle:} \hyperlink{c11}{Page \pageref{c11}:c11}
+\item \textbf{Tower:} N/A %\hyperlink{t11}{Page \pageref{t11}:t11}
+\item \textbf{Arrows:} N/A %\hyperlink{a11}{Page \pageref{a11}:a11}
+\item \textbf{Owl:} N/A %\hyperlink{o11}{Page \pageref{o11}:o11}
+\item \textbf{Eye:} N/A %\hyperlink{e11}{Page \pageref{e11}:e11}
+\item \textbf{Skull:} N/A %\hyperlink{s11}{Page \pageref{s11}:s11}
+\item \textbf{\emph{Prestige:}} N/A %\hyperlink{pres}{Page \pageref{pres}}
+\end{itemize}
+
+\begin{tcolorbox}
+\textbf{Note:} Do not start reading sequentially through this scenario book and spoil yourself.
+\end{tcolorbox}
+
+\vspace*{\fill}
+\pagebreak
+
+\subsection{Scenario Concepts}
+This section details gameplay concepts that are either unique to \emph{Everloyal} or have been significantly altered from the corebook. Reading this entire section is not necessary to begin play; simply reference these concepts as they’re encountered in-game.
+
+\subsubsection{Chapter Actions}
+When reading through a chapter, a chevron (>) designates a chapter action. Chapter actions are events such as: moving to other locations, marking notes, gaining equipment, or making other decisions--all of which have some in-game effect. Chapter actions are normally optional, but chapter actions marked with double chevrons (>>) are required and \emph{must} be taken.\\
+
+\emph{Italicized Text} -- designates a check; this is a requirement that must be fulfilled to take its subsequent chapter action. For example, \emph{8+ INT} designates a chapter action that can only be taken by characters with an \textbf{INT} score of 8 or higher. A check might also ask for a note via its code, such as \emph{Note 123a} for example, or refer to a certain item the character must possess.\\
+If multiple valid options are given in a series, they are usually ordered by priority. The topmost valid option should be resolved. Otherwise, instructions will be given in plain text.\\
+\emph{AND/OR} can be used to require multiple checks for a chapter action, or at least one of them.\\
+A \emph{NOT} means that the player mustn’t meet the check in order to take the subsequent chapter action--it is normally used to prevent the player from redundantly returning to previously encountered readings.\\
+The above concepts are formally known as Boolean logic, and all Boolean concepts apply to them. Further information on Boolean logic can be gleaned from an internet search.\\
+
+\textbf{Gain} -- designates some equipment or attunement that may be gathered. This is limited to once per occurrence, regardless of whether the character makes repeated trips to the reading. If the character chooses not to gather the equipment, it will still be available in that reading.\\
+
+\columnbreak
+
+\textbf{Mark} -- instructs the player to write a new note. It isn’t necessary to write the note’s flavor text. Only the code will be used during checks for chapter actions. They are normally erased at the end of a chapter.\\
+Notes should be written either on the record sheet, or a piece of scratch paper.\\
+Notes bracketed by !! are permanent notes, and are not erased during \textbf{End Chapter} actions.\\
+
+\textbf{Fellow} -- is used when the character encounters one of the sane inhabitants of the game, and allows the player to turn to their page in the fellows section. Some fellows make repeated appearances in different chapters, and therefore may have more than one page in the fellows section.
+
+\subsubsection{Chapters, Sections, and Readings}
+Chapters are the main organizational unit of this scenario book. They refer to the six chapters of the game, each possessing its own chapter card. Every chapter has its own unique letter prepended to the codes of its readings and notes, i.e: \emph{c} for the \textbf{circle} chapter.\\
+Chapters are broken into sections, which designate a general location within the chapter. The first number in the code for a reading designates its section, i.e: \emph{c1} for the first section of the \textbf{circle} chapter.\\
+Readings are, as the name implies, the actual readings within a chapter. They are each designated by a code, prepended with its chapter and section serial, i.e: \emph{c11} for the first reading of the first section of the \textbf{circle} chapter.\\
+Notes are named after the reading in which they are encountered, followed by a unique letter, i.e: \emph{c11a}.
+
+\subsubsection{Conditions Roster}
+\textbf{\emph{Cursed!:}} \hypertarget{Cursed!}{}\emph{Static.} Place the \textbf{skull} chapter card atop the chapter deck. The character immediately suffers a fatal defeat: \textbf{End Chapter.} The character loses all \refto{HMN} and souls, becomes Hollow, and cannot increase \refto{HMN} or upgrade \textbf{SL} while \reftoit{Cursed!} This condition can only be removed via a secret method (do not remove it while resolving \textbf{End Chapter}).\\
+
+\textbf{Enhanced Defense:} \emph{Time-Limited - Round.} The entity’s specified \emph{sink} will increase by the listed amount while this condition is in effect.\\
+The instructions for the enhanced \emph{sink} will look like: \textbf{P.DEF} (2), \textbf{F.DEF (3)}, etc.\\
+Try not to mistake the number of condition tokens for the \emph{sink} increase.\\
+
+\textbf{Enhanced Weapon:} \emph{Time-Limited - Round.} For the player, they will be asked to specify an equipped weapon. Attacks made by the specified weapon will deal additional damage while this condition is in effect. The amount and type of damage will be dictated by the source of this condition.\\
+For enemies, the enemy sheet will specify the damage amount, type, as well as which attacks are enhanced.\\
+The instructions for damage amount and type will look like: Poison (2), Burn (3), etc.\\
+Try not to mistake the number of condition tokens for the damage amount.\\
+
+\textbf{Mantra:} \emph{Static.} When the character is repeating a holy mantra, they gain a Mantra token on their status sheet that provides the mantra’s benefits. The status sheet is limited to a single Mantra token, which is replaced if the character activates a different mantra or is afflicted with Mute.\\
+
+\textbf{Mute:} \emph{Time-Limited - Round.} A Mute entity cannot use any magic attacks or attunements, except for Guts and Secrets. When the character is inflicted with Mute, remove any Mantra token on the status sheet.
+
+\subsubsection{Fellows \& Tradables}
+Trade is still alive and well in the fog-choked environs of Gran Selidore. Those few fellows who retain their sanity also retain their desire for barter--perhaps it’s essential to the well-being of a soul. Fellows will part with the items, equipment, and attunements they’ve collected in exchange for tradables. Tradables can be anything from sweets to actual currency, and a fellow’s dedicated page will list their desires along with their offers (see the Fellows section for details).\\
+Tradables can be \emph{Carried} and stored in the stash like any other equipment. Due to their small size, they can also be equipped in a pouch slot--and some tradables can even be used. If a tradable is used, then it is consumed as if it were an \emph{Ephemeral} item that had run out of charges. Tradables may also be “stacked” in their pouch or \emph{Carried} slot--mark how many tradables are held like: x1, x2, etc.\\
+Of course, fellows are mortals and might be parted from their goods without the need for bartering--including those possessions they aren’t willing to trade away. But this kind of villainous behavior often has dire ramifications.
+
+\subsubsection{Humanity, Memory, \& Hollowing}
+\hypertarget{HMN}{}\hypertarget{MEM}{}
+In \emph{Everloyal}, Humanity functions as a measure of the character’s memory. The character may fill-in \refto{HMN} slots with acquired Humanity in the same manner described in the corebook. However, only \refto{HMN} slots whose accompanying \refto{MEM} box is filled-in may be assigned Humanity.\\
+When the player is instructed to lose Humanity, erase a \refto{HMN} slot. If no \refto{HMN} slots are filled-in, then \emph{erase the character’s name} and circle all permanent notes. If the character gains Humanity without possessing a name, then write a new, unique name for them instead of filling-in a \refto{HMN} slot.\\
+A character without a name is considered Hollow (see the corebook’s Conditions Roster for details). Being Hollow during some events and chapter actions may alter their outcome.
+
+\subsubsection{\emph{Mementos}}
+\hypertarget{mementos}{}\hypertarget{memento}{}
+Whenever the character acquires a \reftoit{memento}, fill-in the \refto{MEM} box above a \refto{HMN} slot. Filling-in this box allows the accompanying \refto{HMN} slot to be assigned with Humanity.\\
+If the character loses or destroys one of their \reftoit{mementos}, erase a \refto{MEM} box. Erasing the \refto{MEM} box will not empty the accompanying \refto{HMN} slot, it only prevents it from being filled-in again until another \reftoit{memento} is acquired.
+
+\subsubsection{Names}
+In \emph{Everloyal}, the character can forget their name by going Hollow. During hollowing, the player is instructed to erase their character’s name and circle all permanent notes. The circling of permanent notes designates them as experiences from a previous name. Some note checks might have further instructions depending on whether the character encountered them under a different name.
+
+\end{multicols*}
+\pagebreak
+
+\include{chapsections/cc}
+
+\section{Chapters}
+
+\input{chapsections/c}
+
+\section{Fellows}
+
+\makefellow{Ratfriend Niki (Circle)}
+
+\pagebreak
+
+\renewcommand{\arraystretch}{1.5}
+\definecolor{Gray}{gray}{0.85}
+\rowcolors{1}{Gray}{}
+
+\section{Armory}
+\subsection{Weapons}
+\subsubsection*{Weapon Anatomy}
+\begin{itemize}
+\item \textbf{Weapon:} Self-explanatory
+\item \textbf{SP:} The \textbf{SP} score required to attack with this weapon
+\item \textbf{Dam:} Base damage, and types of damage available (X means all three: Slash, Crush, and Pierce)
+\item \textbf{Wt:} Weight of the weapon (always in effect, regardless of whether it’s currently held)
+\item \textbf{Hd:} Whether the weapon is one-handed or two-handed by default
+\item \textbf{Rg:} The maximum range of the weapon in tiles
+\item \textbf{Dur:} Durability \emph{sinks} on the weapon, if any
+\item The requirements for each Primary Stat, followed by their scaling grade
+\item \textbf{S.Attacks:} Any special attacks enabled for the weapon
+\item Any additional notes on the weapon
+\end{itemize}
+
+\subsubsection*{Weapons Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.023\textwidth}p{0.054\textwidth}p{0.024\textwidth}p{0.024\textwidth}p{0.03\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.11\textwidth}p{0.23\textwidth}}
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Daggers \& Knives}}\\
+\hline
+\rowcolor{white} \textbf{Weapon} & \textbf{SP} & \textbf{Dam} & \textbf{Wt} & \textbf{Hd} & \textbf{Rg} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{S.Attacks} & \textbf{Notes}\\
+\hline
+\makeitem{Knife} & 1 & 1 S,P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 3|D & Backstab & Coup De Grâce \textbf{SP} cost is reduced to Wep\\\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Swords}}\\
+\hline
+\makeitem{Broken Shortsword} & 2 & 2 S,P & 1 & 1H & 1 & - & STR - 5|D\newline DEX - 5|D & N/A & Deals -1 damage for Pierce attacks\\
+\makeitem{Shortsword} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 7|C & Flurry & N/A\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Bludgeons}}\\
+\hline
+\makeitem{Truncheon} & 1 & 1 C & 1 & 1H & 1 & - & STR - 4|D\newline DEX - 3|D & N/A & N/A\\
+\hline
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.023\textwidth}p{0.054\textwidth}p{0.024\textwidth}p{0.024\textwidth}p{0.03\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.11\textwidth}p{0.23\textwidth}}
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Polearms}}\\
+\hline
+\makeitem{Makeshift Spear} & 1 & 1 P & 1 & 1H & 2 & - & STR - 5|D\newline DEX - 5|D & N/A & N/A\\
+\makeitem{Warped Spear} & 2 & 2 P & 2 & 1H & 2 & - & STR - 6|D\newline DEX - 6|D & N/A & N/A\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Axes}}\\
+\hline
+\makeitem{Axe} & 2 & 2 S & 2 & 1H & 1 & 1 & STR - 8|C\newline DEX - 6|D & Shieldbreak & N/A\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Ranged Weaponry}}\\
+\hline
+\makeitem{Light Crossbow} & 1 & 1 & 2 & 2H & 7 & 1 & STR - 8|E\newline DEX - 8|C\newline INT - 6|E & N/A & Loadable ranged weapon\newline Damage type dependent on missile (uses bolts)\\
+\makeitem{Shortbow} & 2 & - & 1 & 2H & 2-5 & - & STR - 5|D\newline DEX - 6|C & N/A & Ranged weapon\newline Damage and damage type dependent on missile (uses arrows)\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Special Weapons}}\\
+\hline
+\makeitem{Fist} & 2 & 1 C & - & 1H & 1 & - & N/A & Flurry & Cannot be Broken\newline Use if nothing else is equipped\newline Increases damage by 1 at 14 \textbf{STR} and 22 \textbf{STR}\newline No 2H\\
+\makeitem{Loose Cobblestone} & 1 & 1 C & - & 1H & 1 & - & STR - 3|D\newline DEX - 3|E & N/A & \emph{Ephemeral}\newline Cannot be Broken\newline No 2H\\
+\makeitem{Meat Hook} & 1 & 1 P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
+\makeitem{Sock Full of Rocks} & 1 & 1 C & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & \emph{Ephemeral}\newline Overhead deals +1 damage\\
+\makeitem{Torch} & 1 & 1 C & 1 & 1H & 1 & - & N/A & Light/Douse,\newline Set Aflame &  Must be lit to use Set Aflame\newline Counts as a light source when lit\\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Shields}
+\subsubsection*{Shield Anatomy}
+\begin{itemize}
+\item \textbf{Shield:} Self-explanatory
+\item \textbf{Stab:} The Stability of the shield, or how many damage tokens it can block before suffering \emph{Guard Break}
+\item \textbf{Def:} How much damage the shield can block from a single attack; also determines the \textbf{SP} cost of \emph{Shield Up!}
+\item \textbf{Dam:} Damage inflicted by using the shield as a weapon
+\item \textbf{Wt:} Weight of the shield (always in effect, regardless of whether it’s currently held)
+\item \textbf{Dur:} Durability \emph{sinks} on the shield, if any
+\item The requirements for each Primary Stat
+\item \textbf{S.Attacks:} Any special attacks enabled for the shield
+\item Any additional notes on the shield
+\end{itemize}
+
+\subsubsection*{Shields Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.15\textwidth}p{0.03\textwidth}p{0.035\textwidth}p{0.035\textwidth}p{0.024\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.12\textwidth}p{0.245\textwidth}}
+\hline
+\rowcolor{white} \textbf{Shield} & \textbf{Def} & \textbf{Stab} & \textbf{Dam} & \textbf{Wt} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{S.Attacks} & \textbf{Notes}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Battered Kite Shield} & 2 & 5 & 1 C & 2 & - & STR - 7 & N/A & N/A\\
+\makeitem{Cracked Round Shield} & 1 & 4 & 1 C & 1 & - & STR - 5 & N/A & N/A\\
+\makeitem{Table Shield} & 1 & 5 & 1 C & 2 & 1 & STR - 6 & N/A & N/A\\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Armor \& Outfits}
+\subsubsection*{Armor \& Outfit Anatomy}
+\begin{itemize}
+\item \textbf{Set:} Self-explanatory
+\item \textbf{Def:} How much \textbf{P.DEF} is increased by equipping the set
+\item \textbf{PS:} How much \textbf{PS} is increased by equipping the set
+\item \textbf{Wt:} Weight of the set when equipped
+\item \textbf{Dur:} Durability \emph{sinks} on this equipment, if any
+\item The requirements for each Primary Stat
+\item Any additional notes on the set
+\end{itemize}
+
+\subsubsection*{Armor \& Outfits Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.2\textwidth}p{0.035\textwidth}p{0.035\textwidth}p{0.035\textwidth}p{0.035\textwidth}p{0.12\textwidth}p{0.38\textwidth}}
+\hline
+\rowcolor{white} \textbf{Set} & \textbf{Def} & \textbf{PS} & \textbf{Wt} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{Notes}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Prisoner’s Chains} & - & - & 3 & - & N/A & Reduces \textbf{END} by 2 when equipped \\
+\makeitem{Threadbare Guard’s Set} & 1 & - & 3 & - & STR - 6\newline DEX - 4 & N/A \\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Catalysts}
+\subsubsection*{Catalyst Anatomy}
+\begin{itemize}
+\item \textbf{Catalyst:} Self-explanatory
+\item \textbf{Type(s):} What attunement type(s) the catalyst enables
+\item \textbf{PWR:} Base \textbf{PWR} of attunements cast with the catalyst
+\item \textbf{Dam:} Damage inflicted by using the catalyst as a weapon. All catalysts are \textbf{SP} 2 unless stated otherwise
+\item \textbf{Wt:} Weight of the catalyst (always in effect, regardless of whether it’s currently held)
+\item \textbf{Dur:} Durability \emph{sinks} on this equipment, if any
+\item The requirements for each Primary Stat
+\item \textbf{S.Attacks:} Any special attacks enabled for the catalyst
+\item Any additional notes on the catalyst
+\end{itemize}
+\emph{All catalysts are assumed to be one-handed unless stated otherwise}
+
+\subsubsection*{Catalysts Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.11\textwidth}p{0.05\textwidth}p{0.04\textwidth}p{0.02\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.1\textwidth}p{0.2\textwidth}}
+\hline
+\rowcolor{white} \textbf{Catalyst} & \textbf{Type(s)} & \textbf{PWR} & \textbf{Dam} & \textbf{Wt} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{S.Attacks} & \textbf{Notes}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Crude Wand} & Invocations & 0 & 1 C & - & - & INT - 10 & N/A & N/A\\
+\makeitem{Eternal Ember} & Pyromancy & 1* & 1 B & - & - & - & Set Aflame & Can never be doused, and never needs to be lit\newline *This catalyst’s \textbf{PWR} can be upgraded in-game\\
+\makeitem{Secret Calligraphy} & Secrets \& Revelations & 1 & - & - & - & FTH - 10 & N/A & N/A\\
+\makeitem{Wand} & Invocations & 1 & 1 C & - & - & INT - 10 & N/A & N/A\\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Rings}
+\subsubsection*{Rings Anatomy}
+\begin{itemize}
+\item \textbf{Ring:} Self-explanatory
+\item \textbf{Effects:} Effects produced by equipping the ring
+\end{itemize}
+
+\subsubsection*{Rings Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.3\textwidth}p{0.65\textwidth}}
+\hline
+\rowcolor{white} \textbf{Ring} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Lover’s Hair Ring} & Increase \textbf{HP} by 1 \\
+\makeitem{Tearstone Ring} & When the character would lose \textbf{HMN}, erase this ring as if it were \emph{Ephemeral} instead\\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Flasks}
+\subsubsection*{Flasks Anatomy}
+\begin{itemize}
+\item \textbf{Flask:} Self-explanatory
+\item \textbf{Charges:} Number of uses a flask contains. Recharged during \emph{short reprieves}
+\item \textbf{E?} Whether the flask is \emph{Ephemeral}
+\item \textbf{Effects:} Effects produced by drinking from the flask
+\end{itemize}
+
+\subsubsection*{Flasks Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.2\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.505\textwidth}}
+\hline
+\rowcolor{white} \textbf{Flask} & \textbf{Charges} & \textbf{E?} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Sunlit Flask} & 2 & N & Remove up to 3 damage tokens from \textbf{HP} slots \\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Missiles}
+\subsubsection*{Missile Anatomy}
+\begin{itemize}
+\item \textbf{Missile:} Self-explanatory
+\item \textbf{Type:} What ranged weapon type uses this missile
+\item \textbf{Dam:} Damage and damage type, added to the ranged weapon’s damage
+\item \textbf{Rg:} Added or reduced range for the ranged weapon when using this missile
+\item \textbf{Wt:} The weight of the missiles when equipped in a quiver
+\item Any additional notes on the missile
+\end{itemize}
+
+\subsubsection*{Missiles Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.2\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.05\textwidth}p{0.05\textwidth}p{0.357\textwidth}}
+\hline
+\rowcolor{white} \textbf{Missile} & \textbf{Type} & \textbf{Dam} & \textbf{Rg} & \textbf{Wt} & \textbf{Notes}\\
+\hline
+\makeitem{Wooden Arrows} & Bow & 1 P & - & 1 & N/A\\
+\makeitem{Wooden Bolts} & Crossbow & 1 P & - & 1 & N/A\\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Miscellaneous}
+\subsubsection*{Miscellaneous Anatomy}
+\begin{itemize}
+\item \textbf{Item:} Self-explanatory
+\item \textbf{Charges:} Number of uses an item retains
+\item \textbf{E?} Whether the item is \emph{Ephemeral}
+\item \textbf{Wt} The weight of the item
+\item \textbf{Effects:} Effects produced by using the item
+\end{itemize}
+
+\subsubsection*{Items Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.2\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.38\textwidth}}
+\hline
+\rowcolor{white} \textbf{Item} & \textbf{Charges} & \textbf{E?} & \textbf{Wt} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Effigy} & 1 & Yes & - & Mark 1 \textbf{HMN} \\
+\makeitem{Firebombs, Pair} & 2 & Yes & 1 & Deals 2 Burn damage to a hex within 2-4 hexes, and 2 Burn damage to all hexes adjacent to that tile \\
+\makeitem{Foul Substance} & 3 & Yes & - & Add 2 Enhanced Weapon: Poison (2) condition tokens to the status sheet \\
+\makeitem{Small Quiver} & - & No & - & Enables 1 Quiver slot \\
+\makeitem{Queergrass} & 2 & Yes & - & Add 2 Enhanced Defense: \textbf{P.DEF} (2) condition tokens to the status sheet \\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Tradables}
+\subsubsection*{Tradable Anatomy}
+\begin{itemize}
+\item \textbf{Tradable:} Self-explanatory
+\item \textbf{Worth:} How valuable the tradable is to its fellow(s)
+\item \textbf{Fellow(s):} Fellow(s) that will exchange things for the tradable
+\item \textbf{Effects:} Tradables can be kept in pouch slots in addition to being \emph{Carried}, and some can even be used. All tradables are consumed as if they were \emph{Ephemeral} when used in this way
+\end{itemize}
+
+\subsubsection*{Tradables Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.2\textwidth}p{0.1\textwidth}p{0.25\textwidth}p{0.355\textwidth}}
+\hline
+\rowcolor{white} \textbf{Tradable} & \textbf{Worth} & \textbf{Fellow(s)} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Copper Schilling} & 1 & Ratfriend Niki & N/A\\
+\makeitem{Grib Chew} & 1 & Sinecure Petanti,\newline Zealot Eóghainn & Restores all \textbf{FP}\\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\section{Attunements}
+\emph{Everloyal} features five categories of attunements: Guts, Pyromancy, School of Applied Invocations, School of Enchantment, Secrets, and Revelations.
+
+\subsubsection*{Attunement Anatomy}
+\begin{itemize}
+\item \textbf{Name:} Self-explanatory
+\item \textbf{Req:} Primary Stat or other requirements for activating the attunement
+\item \textbf{Int:} Intensity, or how many \textbf{POTs} the attunement occupies 
+\item \textbf{FP:} Cost for activating the attunement. + can be overcast
+\item \textbf{SP:} Cost for activating the attunement. + can be overspent. F is a Free action, and obeys all Free action mechanics
+\item \textbf{Effects:} Effects produced by activating the attunement, and whether the attunement can be activated as a reaction
+\end{itemize}
+
+\subsection{Guts}
+Guts are fighting techniques and stances that can give a warrior a much-needed edge in combat.
+\begin{itemize}
+\item \textbf{Catalyst:} None
+\item \textbf{Bonus:} None
+\item \textbf{Notes:} “Stances” are Free reactions committed at the beginning of the \emph{counterbeat}, which take effect for that entire \emph{counterbeat}. They do not prevent the character from committing a reaction during the first enemy Turn
+\end{itemize}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth}p{0.1\textwidth}p{0.05\textwidth}p{0.05\textwidth}p{0.1\textwidth}p{0.46\textwidth}}
+\hline
+\rowcolor{white} \textbf{Name} & \textbf{Req} & \textbf{Int} & \textbf{FP} & \textbf{SP} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Warcry} & - & 1 & 3 & F & Re-roll a single \textbf{SP} Die. Remember that re-rolls are always once-per-die and the second result is final\\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Pyromancy}
+Pyromancy is a simple but dangerous hedge magic that focuses on nurturing an Eternal Ember into great conflagrations. It requires little skill, but a great amount of concentration--and can be extremely hazardous in the hands of the inept. This magic is semi-religious in nature, and canonically stems from an unnamed demigod known as the Thief of Fire.
+
+\begin{itemize}
+\item \textbf{Catalyst:} Eternal Ember
+\item \textbf{Bonus:} \textbf{FB}
+\item \textbf{Notes:} The Eternal Ember is the only catalyst available to pyromancy, but its \textbf{PWR} can be upgraded in-game
+\end{itemize}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth}p{0.1\textwidth}p{0.05\textwidth}p{0.05\textwidth}p{0.1\textwidth}p{0.46\textwidth}}
+\hline
+\rowcolor{white} \textbf{Name} & \textbf{Req} & \textbf{Int} & \textbf{FP} & \textbf{SP} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Cauterize} & - & - & 1 & 2 & Deal 1 \emph{Inevitable} Burn damage to the character and remove all Bleeding tokens from the status sheet.\newline This attunement is always available to a character equipping an ember, and does not occupy a \textbf{POT} \\
+\makeitem{Flameburst} & - & 1 & 3 & 2 & Deal \refto{PWR} Burn damage to an adjacent enemy \\
+\makeitem{Stoke Ember} & - & - & 1 & 1D & The ember becomes a light source until the next \emph{short reprieve}.\newline This attunement is always available to a character equipping an ember, and does not occupy a \textbf{POT} \\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{School of Applied Invocations}
+Applied Invocations is the most widely popularized form of sorcery: the controlled application of magical energy according to academic principals. Invocations provide a great deal of utility and power, but require years of study on top of an already brilliant mind--in addition to a suitable (and often expensive) catalyst.
+
+\begin{itemize}
+\item \textbf{Catalyst:} Wands
+\item \textbf{Bonus:} \textbf{MB}
+\item \textbf{Notes:} N/A
+\end{itemize}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth}p{0.1\textwidth}p{0.05\textwidth}p{0.05\textwidth}p{0.1\textwidth}p{0.46\textwidth}}
+\hline
+\rowcolor{white} \textbf{Name} & \textbf{Req} & \textbf{Int} & \textbf{FP} & \textbf{SP} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Blinding Light} & INT: 10 & 1 & 4 & 2 & Inflict Blinded on all enemies in a \textbf{PWR}-hex cone\\
+\makeitem{Magic Arrow} & INT: 10 & 1 & 2 & 2 & Deal 2 \emph{Lock-On} Magic damage to an enemy within \textbf{PWR}*3 hexes\\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{School of Enchantment}
+Enchantment is the alteration or transmutation of physical properties via the application of magical energy. Most enchantments are temporary, and do not require a catalyst. However, longaevus enchantments require the usage of Gorium crystals, colloquially known as “Gor’s Grey Poison” for their hazardous aura. They are exhausted during the enchantment process.
+
+\begin{itemize}
+\item \textbf{Catalyst:} None
+\item \textbf{Bonus:} \textbf{MB}
+\item \textbf{Notes:} “Longaevus” attunements are permanent, and consume Gorium crystals (the number parenthesized in the attunement’s name)
+\end{itemize}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth}p{0.1\textwidth}p{0.05\textwidth}p{0.05\textwidth}p{0.1\textwidth}p{0.46\textwidth}}
+\hline
+\rowcolor{white} \textbf{Name} & \textbf{Req} & \textbf{Int} & \textbf{FP} & \textbf{SP} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Baubel} & INT: 10 & 1 & 1 & 1D & Summons a light source until the next \emph{short reprieve} \\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Secrets}
+Something of a mania amongst the followers of Av*rn-Z*l, the Mystic Keys is a collection of secret words, mantras, and parables that produce miraculous effects when spoken--so long as the speaker is sufficiently convinced of their truthfulness. The Keys (as it’s often called in short) is an unwritten codex, and King Z*l’s faithful are forbidden from translating any of its contents into writing upon pain of death. Despite this, there is still some iconography within the religion, the most popular of which being the Sign: a thin, hollow circle representing loyalty.
+
+\begin{itemize}
+\item \textbf{Catalyst:} Icons (Optionally)
+\item \textbf{Bonus:} \textbf{LB}
+\item \textbf{Notes:} “Mantras” are \emph{static} conditions. The status sheet is limited to 1 Mantra token at a time, which is replaced when another mantra is activated. See the Conditions Roster section for details
+\end{itemize}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth}p{0.1\textwidth}p{0.05\textwidth}p{0.05\textwidth}p{0.1\textwidth}p{0.46\textwidth}}
+\hline
+\rowcolor{white} \textbf{Name} & \textbf{Req} & \textbf{Int} & \textbf{FP} & \textbf{SP} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Mantra: Dedication} & FTH: 10 & 1 & 1 & 1D & Immediately after rolling the \emph{stamina pool}, the character may re-roll \textbf{SP} Dice for 3 \textbf{FP} per die. Remember that re-rolls are once-per-die and the second result is final \\
+\makeitem{Hope} & FTH: 10 & 1 & 2 & 1D & Summons a light source until the next \emph{short reprieve}. If cast during an encounter, the character gains 1 token of Enhanced Defense: \textbf{D.DEF} (1) \\
+\makeitem{Masin Crosses the River} & FTH: 13 & 1 & 4 & 3 & Move 5, ignoring the effects of any hazard tiles \\
+\makeitem{Succor} & FTH: 10 & 1 & 3 & 3 & Remove \textbf{PWR} damage tokens from the character’s \textbf{HP} slots \\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\subsection{Revelations}
+The worship of Av*rn-Z*l is already an occult religion, yet it still manages to retain its own sect of gnostics--a secretive cult within a secretive cult. These gnostics contemplate the Mystic Keys in search of Revelations: alternative meanings behind its words and parables. These profane meanings pervert the power of the Keys, producing verso-miracles. Revelations are also thought, not spoken; and this suspicious silence only lends to their dark reputation. The practice of Revelations has long been branded as blasphemy by the Inner Circle, and has led to burnings and even internally-led pogroms.
+
+\begin{itemize}
+\item \textbf{Catalyst:} Icons (Optionally)
+\item \textbf{Bonus:} \textbf{DB}
+\item \textbf{Notes:} Each Revelations attunement is derived from an identical entry in the Secrets roster. Attuning an entry from Secrets also gives the character access to its twin in the Revelations roster. The character must still meet any requirements for the version they wish to activate. In-game, the character will only encounter these attunements via their entry in the Secrets roster
+\end{itemize}
+
+\begin{tcolorbox}
+\textbf{Note:} The status sheet is limited to 1 Mantra token, regardless of the mantra’s version.
+\end{tcolorbox}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth}p{0.1\textwidth}p{0.05\textwidth}p{0.05\textwidth}p{0.1\textwidth}p{0.46\textwidth}}
+\hline
+\rowcolor{white} \textbf{Name} & \textbf{Req} & \textbf{Int} & \textbf{FP} & \textbf{SP} & \textbf{Effects}\setcounter{rownum}{0}\\
+\hline
+\makeitem{Revealed Mantra: Dedication} & INT: 8\newline FTH: 10 & 1 & 2 & 1D & Immediately after rolling the \emph{stamina pool}, the character may spend a single \textbf{SP} Die to restore \textbf{FP} equal to the die’s score\\
+\makeitem{Revelation: Hope} & INT: 10\newline FTH: 8 & 1 & 4 & 3 & Inflict Blinded on any visible enemy \\
+\makeitem{Revelation: Masin Crosses the River} & INT: 8\newline FTH: 8 & 1 & 3+ & 3 & Deal \textbf{PWR}+ \emph{Unblockable} and \emph{Undodgeable} Dark damage to an enemy within 5 hexes \\
+\makeitem{Revelation: Succor} & INT: 8\newline FTH: 8 & 1 & 3 & 2 & Inflict Bleeding on any visible enemy \\
+\hline
+\end{tabularx}
+\end{center}
+
+\pagebreak
+
+\end{document}
