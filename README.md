@@ -1,2 +1,4 @@
 # ffa-asj_everloyal
-FFA:ASJ Everloyal
+Fires Far Away: A Solitaire Journey
+
+Everloyal
