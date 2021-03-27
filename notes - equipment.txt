@@ -19,6 +19,7 @@ Colorful Leather Set
 
 rings:
 Bloodstone Ring
+Goldhand Signet Ring %%add to mezzanine inspection event
 
 catalysts:
 Ornate Wand
@@ -39,3 +40,5 @@ Slink
 Praise
 Enchant Shield
 Dazzle
+Flamecast
+
