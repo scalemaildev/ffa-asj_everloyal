@@ -19,7 +19,7 @@ Colorful Leather Set
 
 rings:
 Bloodstone Ring
-Goldhand Signet Ring %%add to mezzanine inspection event
+Goldhand Signet Ring
 
 catalysts:
 Ornate Wand
