@@ -7,10 +7,12 @@ Battleaxe
 Hand Crossbow
 Halberd
 Claymore
+Rondel Dagger
 
 shields:
 Kite Shield
 Round Shield
+Buckler
 
 armor:
 Guard's Set
@@ -20,6 +22,7 @@ Colorful Leather Set
 rings:
 Bloodstone Ring
 Goldhand Signet Ring
+Steelrod Ring
 
 catalysts:
 Ornate Wand
