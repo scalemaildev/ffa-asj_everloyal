@@ -1,0 +1,63 @@
+\subsection{Weapons}
+\subsubsection*{Weapon Anatomy}
+\begin{itemize}
+\item \textbf{Weapon:} Self-explanatory
+\item \textbf{SP:} The \textbf{SP} score required to attack with this weapon
+\item \textbf{Dam:} Base damage, and types of damage available (X means all three: Slash, Crush, and Pierce)
+\item \textbf{Wt:} Weight of the weapon (always in effect, regardless of whether it’s currently held)
+\item \textbf{Hd:} Whether the weapon is one-handed or two-handed by default
+\item \textbf{Rg:} The maximum range of the weapon in tiles
+\item \textbf{Dur:} Durability \emph{sinks} on the weapon, if any
+\item The requirements for each Primary Stat, followed by their scaling grade
+\item \textbf{S.Attacks:} Any special attacks enabled for the weapon
+\item Any additional notes on the weapon
+\end{itemize}
+
+\subsubsection*{Weapons Roster}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.023\textwidth}p{0.054\textwidth}p{0.024\textwidth}p{0.024\textwidth}p{0.03\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.11\textwidth}p{0.23\textwidth}}
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Daggers \& Knives}}\\
+\hline
+\rowcolor{white} \textbf{Weapon} & \textbf{SP} & \textbf{Dam} & \textbf{Wt} & \textbf{Hd} & \textbf{Rg} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{S.Attacks} & \textbf{Notes}\\
+\hline
+\makeitem{Knife} & 1 & 1 S,P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 3|D & Backstab & Coup De Grâce \textbf{SP} cost is reduced to Wep\\\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Swords}}\\
+\hline
+\makeitem{Broken Shortsword} & 2 & 2 S,P & 1 & 1H & 1 & - & STR - 5|D\newline DEX - 5|D & N/A & Deals -1 damage for Pierce attacks\\
+\makeitem{Shortsword} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 7|C & Flurry & N/A\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Bludgeons}}\\
+\hline
+\makeitem{Truncheon} & 1 & 1 C & 1 & 1H & 1 & - & STR - 4|D\newline DEX - 3|D & N/A & N/A\\
+\hline
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.023\textwidth}p{0.054\textwidth}p{0.024\textwidth}p{0.024\textwidth}p{0.03\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.11\textwidth}p{0.23\textwidth}}
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Polearms}}\\
+\hline
+\makeitem{Makeshift Spear} & 1 & 1 P & 1 & 1H & 2 & - & STR - 5|D\newline DEX - 5|D & N/A & N/A\\
+\makeitem{Warped Spear} & 2 & 2 P & 2 & 1H & 2 & - & STR - 6|D\newline DEX - 6|D & N/A & N/A\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Axes}}\\
+\hline
+\makeitem{Axe} & 2 & 2 S & 2 & 1H & 1 & 1 & STR - 8|C\newline DEX - 6|D & Shieldbreak & N/A\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Ranged Weaponry}}\\
+\hline
+\makeitem{Light Crossbow} & 1 & 1 & 2 & 2H & 7 & 1 & STR - 8|E\newline DEX - 8|C\newline INT - 6|E & N/A & Loadable ranged weapon\newline Damage type dependent on missile (uses bolts)\\
+\makeitem{Shortbow} & 2 & - & 1 & 2H & 2-5 & - & STR - 5|D\newline DEX - 6|C & N/A & Ranged weapon\newline Damage and damage type dependent on missile (uses arrows)\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Special Weapons}}\\
+\hline
+\makeitem{Fist} & 2 & 1 C & - & 1H & 1 & - & N/A & Flurry & Cannot be Broken\newline Use if nothing else is equipped\newline Increases damage by 1 at 14 \textbf{STR} and 22 \textbf{STR}\newline No 2H\\
+\makeitem{Loose Cobblestone} & 1 & 1 C & - & 1H & 1 & - & STR - 3|D\newline DEX - 3|E & N/A & \emph{Ephemeral}\newline Cannot be Broken\newline No 2H\\
+\makeitem{Meat Hook} & 1 & 1 P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
+\makeitem{Sock Full of Rocks} & 1 & 1 C & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & \emph{Ephemeral}\newline Overhead deals +1 damage\\
+\makeitem{Torch} & 1 & 1 C & 1 & 1H & 1 & - & N/A & Light/Douse,\newline Set Aflame &  Must be lit to use Set Aflame\newline Counts as a light source when lit\\
+\hline
+\end{tabularx}
+\end{center}
