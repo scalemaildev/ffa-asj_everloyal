@@ -1,47 +1,18 @@
 weapons:
-Stiletto
-Main-Gauche
-Mace
-Spear
-Battleaxe
-Hand Crossbow
-Halberd
-Claymore
-Rondel Dagger
 
 shields:
-Kite Shield
-Round Shield
-Buckler
 
 armor:
-Guard's Set
-Heavy Guard's Set
-Colorful Leather Set
-
-rings:
-Bloodstone Ring
-Goldhand Signet Ring
-Steelrod Ring
 
 catalysts:
-Ornate Wand
+
+rings:
+
+flasks:
+moonlit flask
 
 missiles:
 
 misc:
-Throwing Knives
-Quiver
-Asbestos Powder
-Turpentine
-Bandages
-Queergrass Poultice
 
 attunements:
-Leaf Stance
-Slink
-Praise
-Enchant Shield
-Dazzle
-Flamecast
-Leap

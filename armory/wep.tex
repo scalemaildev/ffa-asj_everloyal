@@ -21,15 +21,10 @@
 \hline
 \rowcolor{white} \textbf{Weapon} & \textbf{SP} & \textbf{Dam} & \textbf{Wt} & \textbf{Hd} & \textbf{Rg} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{S.Attacks} & \textbf{Notes}\\
 \hline
-\makeitem{Knife} & 1 & 1 S,P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 3|D & Backstab & Coup De Grâce \textbf{SP} cost is reduced to Wep\\\hline
-\rowcolor{white} \multicolumn{10}{l}{\textbf{Swords}}\\
-\hline
-\makeitem{Broken Shortsword} & 2 & 2 S,P & 1 & 1H & 1 & - & STR - 5|D\newline DEX - 5|D & N/A & Deals -1 damage for Pierce attacks\\
-\makeitem{Shortsword} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 7|C & Flurry & N/A\\
-\hline
-\rowcolor{white} \multicolumn{10}{l}{\textbf{Bludgeons}}\\
-\hline
-\makeitem{Truncheon} & 1 & 1 C & 1 & 1H & 1 & - & STR - 4|D\newline DEX - 3|D & N/A & N/A\\
+\makeitem{Knife} & 1 & 1 S,P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 3|D & Backstab & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
+\makeitem{Main-Gauche} & 1 & 1 P & 1H & 1 & 1 & - & STR - 5|D\newline DEX - 10|B & N/A & Coup De Grâce \textbf{SP} cost is reduced to Wep\newline Parry-like actions can use \textbf{SP} dice 1 score higher than the target die (only if this weapon is currently held)\\
+\makeitem{Rondel Dagger} & 1 & 1 P & 1 & 1H & 1 & - & STR - 4|D\newline DEX - 6|B & Backstab, Puncture & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
+\makeitem{Stiletto} & 1 & 1 P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 9|B & Backstab, Lunge, Puncture & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \hline
 \end{tabularx}
 \end{center}
@@ -37,17 +32,39 @@
 \begin{center}
 \begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.023\textwidth}p{0.054\textwidth}p{0.024\textwidth}p{0.024\textwidth}p{0.03\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.11\textwidth}p{0.23\textwidth}}
 \hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Swords}}\\
+\hline
+\makeitem{Broadsword} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 7|C & Cut & N/A \\
+\makeitem{Broken Shortsword} & 2 & 2 S,P & 1 & 1H & 1 & - & STR - 5|D\newline DEX - 5|D & N/A & Deals -1 damage for Pierce attacks\\
+\makeitem{Claymore} & 3 & 4 S,P & 3 & 2H & 1 & 2 & STR - 10|B\newline DEX - 7|C & Lunge & Pierce attacks are range 2\\
+\makeitem{Shortsword} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 7|C & Flurry & N/A\\
+\hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Bludgeons}}\\
+\hline
+\makeitem{Truncheon} & 1 & 1 C & 1 & 1H & 1 & - & STR - 4|D\newline DEX - 3|D & N/A & N/A\\
+\makeitem{Mace} & 3 & 3 C & 2 & 1H & 1 & - & STR - 9|B\newline DEX - 4|D & N/A & Cannot be Broken\\
+\hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Polearms}}\\
 \hline
+\makeitem{Halberd} & 4 & 5 S,P & 3 & 2H & 2 & 1 & STR - 13|A\newline DEX - 8|C & N/A & Sweep \textbf{SP} cost is reduced to Wep+1\newline Spin \textbf{SP} cost is reduced to Wep+2\\
 \makeitem{Makeshift Spear} & 1 & 1 P & 1 & 1H & 2 & - & STR - 5|D\newline DEX - 5|D & N/A & N/A\\
+\makeitem{Spear} & 2 & 2 P & 2 & 2H & 2 & 1 & STR - 7|C\newline DEX - 7|C & N/A & N/A\\
 \makeitem{Warped Spear} & 2 & 2 P & 2 & 1H & 2 & - & STR - 6|D\newline DEX - 6|D & N/A & N/A\\
 \hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Axes}}\\
 \hline
 \makeitem{Axe} & 2 & 2 S & 2 & 1H & 1 & 1 & STR - 8|C\newline DEX - 6|D & Shieldbreak & N/A\\
+\makeitem{Battle Axe} & 3 & 3 S & 3 & 1H & 1 & 1 & STR - 10|B\newline DEX - 7|D & Shieldbreak & Cleave \textbf{SP} cost is reduced to Wep\\
+\hline
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.023\textwidth}p{0.054\textwidth}p{0.024\textwidth}p{0.024\textwidth}p{0.03\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.11\textwidth}p{0.23\textwidth}}
 \hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Ranged Weaponry}}\\
 \hline
+\makeitem{Hand Crossbow} & 1 & 1 & 1 & 1H & 5 & 1 & STR - 6|E\newline DEX - 7|C\newline INT - 6|E & N/A & Loadable ranged weapon\newline Damage type dependent on missile (uses bolts)\newline Can commit Shoot one-handed\\
 \makeitem{Light Crossbow} & 1 & 1 & 2 & 2H & 7 & 1 & STR - 8|E\newline DEX - 8|C\newline INT - 6|E & N/A & Loadable ranged weapon\newline Damage type dependent on missile (uses bolts)\\
 \makeitem{Shortbow} & 2 & - & 1 & 2H & 2-5 & - & STR - 5|D\newline DEX - 6|C & N/A & Ranged weapon\newline Damage and damage type dependent on missile (uses arrows)\\
 \hline
