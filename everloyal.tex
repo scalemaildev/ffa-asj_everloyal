@@ -38,7 +38,19 @@
 
 \newpage
 
+\vspace*{\fill}
+
+\begin{center}
+This page intentionally left blank.\\
+\end{center}
+
+\vspace*{\fill}
+
+\pagebreak
+
 \AddToShipoutPictureBG{\includegraphics[width=\paperwidth,height=\paperheight]{misc/background.pdf}}
+
+\phantomsection
 \setlength\parindent{0pt}
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -127,8 +139,8 @@ Ensure the following game materials are available:
 \item A pack of index cards or scratch paper
 \item A bowl of coins, beads, or other small and discrete tokens (for damage, charges, etc)
 \item Printed copies of the character, status, and record sheets (found at the end of this scenario book)
-\item 3 double-sided copies of the Hexagon-Tiled Map (from the corebook)
-\item Optionally: the encounter reference sheet (from the corebook)
+\item 3 double-sided copies of the Hexagon-Tiled Map (found at the back of the corebook)
+\item Optionally: the encounter reference sheet (found at the back of the corebook)
 \end{itemize}
 
 Then complete the following steps:
@@ -143,10 +155,10 @@ Then complete the following steps:
 
 Afterwards, the chapter deck should consist of four cards in random order, with the \textbf{circle} card on top and the \textbf{skull} card set aside.
 \begin{tcolorbox}
-\textbf{Note:} The \emph{prestige} is not technically a chapter, and so it does not require a chapter card.
+\textbf{Note:} For this scenario, the \textbf{skull} chapter is not required to continue onto the \emph{prestige}.
 \end{tcolorbox}
 Once the game materials are gathered and the chapter deck is ready, it’s time to create a character.\\
-\ \\
+
 \hyperlink{chargen}{\textbf{Turn to: Character Creation (Page \pageref{chargen}})}
 
 \subsection{Scenario Resolution}
@@ -177,25 +189,6 @@ After resolving the last card in the chapter deck, turn to the \emph{prestige’
 \subsection{Scenario Concepts}
 This section details gameplay concepts that are either unique to \emph{Everloyal} or have been significantly altered from the corebook. Reading this entire section is not necessary to begin play; simply reference these concepts as they’re encountered in-game.
 
-\subsubsection{Chapter Actions}
-When reading through a chapter, a chevron (>) designates a chapter action. Chapter actions are events such as: moving to other locations, marking notes, gaining equipment, or making other decisions--all of which have some in-game effect. Chapter actions are normally optional, but chapter actions marked with double chevrons (>>) are required and \emph{must} be taken.\\
-
-\emph{Italicized Text} -- designates a check; this is a requirement that must be fulfilled to take its subsequent chapter action. For example, \emph{8+ INT} designates a chapter action that can only be taken by characters with an \textbf{INT} score of 8 or higher. A check might also ask for a note via its code, such as \emph{Note 123a} for example, or refer to a certain item the character must possess.\\
-If multiple valid options are given in a series, they are usually ordered by priority. The topmost valid option should be resolved. Otherwise, instructions will be given in plain text.\\
-\emph{AND/OR} can be used to require multiple checks for a chapter action, or at least one of them.\\
-A \emph{NOT} means that the player mustn’t meet the check in order to take the subsequent chapter action--it is normally used to prevent the player from redundantly returning to previously encountered readings.\\
-The above concepts are formally known as Boolean logic, and all Boolean concepts apply to them. Further information on Boolean logic can be gleaned from an internet search.\\
-
-\textbf{Gain} -- designates some equipment or attunement that may be gathered. This is limited to once per occurrence, regardless of whether the character makes repeated trips to the reading. If the character chooses not to gather the equipment, it will still be available in that reading.\\
-
-\columnbreak
-
-\textbf{Mark} -- instructs the player to write a new note. It isn’t necessary to write the note’s flavor text. Only the code will be used during checks for chapter actions. They are normally erased at the end of a chapter.\\
-Notes should be written either on the record sheet, or a piece of scratch paper.\\
-Notes bracketed by !! are permanent notes, and are not erased during \textbf{End Chapter} actions.\\
-
-\textbf{Fellow} -- is used when the character encounters one of the sane inhabitants of the game, and allows the player to turn to their page in the fellows section. Some fellows make repeated appearances in different chapters, and therefore may have more than one page in the fellows section.
-
 \subsubsection{Chapters, Sections, and Readings}
 Chapters are the main organizational unit of this scenario book. They refer to the six chapters of the game, each possessing its own chapter card. Every chapter has its own unique letter prepended to the codes of its readings and notes, i.e: \emph{c} for the \textbf{circle} chapter.\\
 Chapters are broken into sections, which designate a general location within the chapter. The first number in the code for a reading designates its section, i.e: \emph{c1} for the first section of the \textbf{circle} chapter.\\
@@ -206,38 +199,40 @@ Notes are named after the reading in which they are encountered, followed by a u
 \textbf{\emph{Cursed!:}} \hypertarget{Cursed!}{}\emph{Static.} Place the \textbf{skull} chapter card atop the chapter deck. The character immediately suffers a fatal defeat: \textbf{End Chapter.} The character loses all \refto{HMN} and souls, becomes Hollow, and cannot increase \refto{HMN} or upgrade \textbf{SL} while \reftoit{Cursed!} This condition can only be removed via a secret method (do not remove it while resolving \textbf{End Chapter}).\\
 
 \textbf{Enhanced Defense:} \emph{Time-Limited - Round.} The entity’s specified \emph{sink} will increase by the listed amount while this condition is in effect.\\
-The instructions for the enhanced \emph{sink} will look like: \textbf{P.DEF} (2), \textbf{F.DEF (3)}, etc.\\
-Try not to mistake the number of condition tokens for the \emph{sink} increase.\\
-\textbf{Enhanced Defense} is non-cumulative for each \emph{sink}. The character sheet may not stack the effects of multiple \textbf{Enhanced Defense} tokens of a single \emph{sink}, but may contain multiple tokens of different \emph{sinks}.\\
+The instructions for the enhanced \emph{sink} will look like: \textbf{P.DEF} (2), \textbf{F.DEF} (3), etc.\\
+Try not to mistake the number of condition tokens for the Defense increase.\\
+This condition is non-cumulative for each discrete \emph{sink}. The character sheet may not stack the effects of multiple \textbf{Enhanced Defense} tokens for a single \emph{sink}, but may benefit from multiple tokens affecting different \emph{sinks}.
 
 \textbf{Enhanced Weapon:} \emph{Time-Limited - Round.} For the player, they will be asked to specify an equipped weapon. Attacks made by the specified weapon will deal additional damage while this condition is in effect. The amount and type of damage will be dictated by the source of this condition.\\
 For enemies, the enemy sheet will specify the damage amount, type, as well as which attacks are enhanced.\\
 The instructions for damage amount and type will look like: Poison (2), Burn (3), etc.\\
-Try not to mistake the number of condition tokens for the damage amount.\\
-The character sheet is limited to 1 type of \textbf{Enhanced Weapon} token.\\
+Try not to mistake the number of condition tokens for the damage increase.\\
+This condition is non-cumulative; the character may only benefit from one \textbf{Enhanced Weapon} token at a time.\\
 
 \textbf{Mantra:} \emph{Static.} When the character is repeating a holy mantra, they gain a Mantra token on their status sheet that provides the mantra’s benefits. The status sheet is limited to a single Mantra token, which is replaced if the character activates a different mantra or is afflicted with Mute.\\
 
-\textbf{Mute:} \emph{Time-Limited - Round.} A Mute entity cannot use any magic attacks or attunements, except for Guts and Secrets. When the character is inflicted with Mute, remove any Mantra token on the status sheet.
+\textbf{Mute:} \emph{Time-Limited - Round.} A Mute entity cannot use any magic attacks or attunements, except for Guts and Revelations. When the character is inflicted with Mute, remove any Mantra token on the status sheet.
 
 \subsubsection{Fellows \& Tradables}
-Trade is still alive and well in the fog-choked environs of Gran Selidore. Those few fellows who retain their sanity also retain their desire for barter--perhaps it’s essential to the well-being of a soul. Fellows will part with the items, equipment, and attunements they’ve collected in exchange for tradables. Tradables can be anything from sweets to actual currency, and a fellow’s dedicated page will list their desires along with their offers (see the Fellows section for details).\\
+Trade is still alive and well in the fog-choked environs of Gran Selidore. Those few fellows who retain their sanity also retain their desire for barter--perhaps it’s essential to the well-being of the soul.\\
+Fellows will part with the items, equipment, and attunements they’ve collected in exchange for tradables. Tradables can be anything from sweets to actual currency, and a fellow’s dedicated page will list their desires along with their offers (see the Fellows section for details).\\
 Tradables can be \emph{Carried} and stored in the stash like any other equipment. Due to their small size, they can also be equipped in a pouch slot--and some tradables can even be used. If a tradable is used, then it is consumed as if it were an \emph{Ephemeral} item that had run out of charges. Tradables may also be “stacked” in their pouch or \emph{Carried} slot--mark how many tradables are held like: x1, x2, etc.\\
 Of course, fellows are mortals and might be parted from their goods without the need for bartering--including those possessions they aren’t willing to trade away. But this kind of villainous behavior often has dire ramifications.
 
 \subsubsection{Humanity, Memory, \& Hollowing}
 \hypertarget{HMN}{}\hypertarget{MEM}{}
-In \emph{Everloyal}, Humanity functions as a measure of the character’s memory. The character may fill-in \refto{HMN} slots with acquired Humanity in the same manner described in the corebook. However, only \refto{HMN} slots whose accompanying \refto{MEM} box is filled-in may be assigned Humanity.\\
-When the player is instructed to lose Humanity, erase a \refto{HMN} slot. If no \refto{HMN} slots are filled-in, then \emph{erase the character’s name} and circle all permanent notes. If the character gains Humanity without possessing a name, then write a new, unique name for them instead of filling-in a \refto{HMN} slot.\\
+In \emph{Everloyal}, Humanity functions as a measure of the character’s memory. The character may mark \refto{HMN} boxes with acquired Humanity in the same manner described in the corebook. However, only \refto{HMN} boxes whose accompanying \reftoit{memento} (\refto{MEM}) slot is filled-in may be assigned Humanity.\\
+When the player is instructed to lose Humanity, erase a \refto{HMN} box. If no \refto{HMN} boxes are marked, then \emph{erase the character’s name} and circle all permanent notes. If the character gains Humanity without possessing a name, then write a new, unique name for them instead of marking a \refto{HMN} slot.\\
 A character without a name is considered Hollow (see the corebook’s Conditions Roster for details). Being Hollow during some events and chapter actions may alter their outcome.
 
 \subsubsection{\emph{Mementos}}
 \hypertarget{mementos}{}\hypertarget{memento}{}
-Whenever the character acquires a \reftoit{memento}, fill-in the \refto{MEM} box above a \refto{HMN} slot. Filling-in this box allows the accompanying \refto{HMN} slot to be assigned with Humanity.\\
-If the character loses or destroys one of their \reftoit{mementos}, erase a \refto{MEM} box. Erasing the \refto{MEM} box will not empty the accompanying \refto{HMN} slot, it only prevents it from being filled-in again until another \reftoit{memento} is acquired.
+Whenever the character acquires a \reftoit{memento}, fill-in the \refto{MEM} slot below a \refto{HMN} box. Filling-in this slot allows the accompanying \refto{HMN} box to be assigned with Humanity.\\
+If the character loses or destroys one of their \reftoit{mementos}, erase a \refto{MEM} slot. Erasing the \refto{MEM} slot will not empty the accompanying \refto{HMN} box, it only prevents it from being marked again until another \reftoit{memento} is acquired.
 
 \subsubsection{Names}
-In \emph{Everloyal}, the character can forget their name by going Hollow. During hollowing, the player is instructed to erase their character’s name and circle all permanent notes. The circling of permanent notes designates them as experiences from a previous name. Some note checks might have further instructions depending on whether the character encountered them under a different name.
+In \emph{Everloyal}, the character can forget their name by going Hollow. During hollowing, the player is instructed to erase their character’s name and circle all permanent notes. The circling of permanent notes designates them as experiences from a previous name. Some note checks might have further instructions depending on whether the character encountered them under a different name.\\
+If a note check is bracketed like: \emph{(Note 123a)}, then the check requires that the note is \emph{not} circled.
 
 \end{multicols*}
 \pagebreak
@@ -265,5 +260,12 @@ In \emph{Everloyal}, the character can forget their name by going Hollow. During
 \input{attunements/at}
 
 \pagebreak
+
+\begin{center}
+\vspace*{-2.5cm}
+\makebox[\linewidth]{
+        \includegraphics[width=1.22\linewidth]{misc/character_sheet.png}
+    }
+\end{center}
 
 \end{document}
