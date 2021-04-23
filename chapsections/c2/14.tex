@@ -12,33 +12,27 @@ For this encounter, \emph{doom events} are triggered by the remaining number of 
 \item \textbf{10 Remaining:} \emph{The phalanx begins to march--lurching, and badly out of step.} Begin the encounter by rolling on table A.
 \item \textbf{8 Remaining:} \emph{The Lost Phalanx drags its dead members along by their chains.} The Lost Phalanx loses 1 Move value.
 \item \textbf{6 Remaining:} \emph{The number of dead members has severely slowed the formation.} The Lost Phalanx loses 1 Move value.
-\item \textbf{4 Remaining:} \emph{The remaining hollows are incapable of moving.} The last 4 Hollowed Prisoner Phalanx entities are no longer part of The Lost Phalanx formation, and act as individual entities. Roll on Encounter Table B for this and all future Rounds.
+\item \textbf{4 Remaining:} \emph{The remaining hollows can no longer hold their formation.} The last 4 Hollowed Prisoner Phalanx entities are no longer part of The Lost Phalanx formation, and act as individual entities. Roll on Encounter Table B for this and all future Rounds.
 \end{itemize}
 
 \pagebreak
 
 \subsection*{Formation Fighter Rules}
+A Formation Fighter is a group of entities that all act together during a single Turn. However, each entity still attacks individually, and retains its own \textbf{HP} pool.\\
+
 \textbf{The Formation} -- The Lost Phalanx must maintain its original “two columns” formation as best as possible, though it may snake and bend. See the example images below.\\
 
-\textbf{Movement} -- During the \emph{counterbeat}, the entire formation moves before its individual entities commit any attacks. Move the formation by first moving its front row, and then fill in the rest of the phalanx behind it. The “front” is whichever row is closest to the character at the start of the Turn. If the character is positioned off to one side of the phalanx, so that multiple rows are equidistant, then then move the formation via the nearest column instead (the formation will move sideways).
+\textbf{Movement} -- During the \emph{counterbeat}, the entire formation moves all at once. Start by moving the front row towards the character, and then fill in the rest of the phalanx behind it. The “front” is whichever row is closest to the character at the start of the Turn. If the character is positioned off to one side of the phalanx, so that multiple rows are equidistant, then then move the formation via the nearest column instead (the formation will move sideways).
 
-\begin{tcolorbox}
-\textbf{Note:} Remember, only the front row/column moves towards the character. The rest of the phalanx just fills in behind the front, maintaining the original formation as best as possible.
-\end{tcolorbox}
-
-\textbf{Attacking} -- Resolve each attack for all individual entities, starting sequentially from the front. Within each row/column, the player may resolve the individual entities’ Turns in any order of their choosing. When an encounter roll has multiple attacks, resolve all attacks of the first type before moving onto the second. Entities in the formation may attack past each other. \emph{Each individual entity may only resolve one attack per Turn.}\\
-
-\textbf{Damage} --  Treat The Lost Phalanx as a single entity with one \textbf{HP} pool. For every 3 damage tokens assigned to \textbf{HP}, remove the last damaged entity/entities. The formation will reform its ranks next time it moves. Area of Effect attacks (such as firebombs) will inflict damage for each individual entity struck.
-
-\subsection*{Example Images}
+\subsection*{Movement Example Images}
 \begin{center}
 \framebox{\includegraphics[width = 0.3\textwidth]{./maps/c214a.png}}
 \framebox{\includegraphics[width = 0.3\textwidth]{./maps/c214b.png}}
 \framebox{\includegraphics[width = 0.3\textwidth]{./maps/c214c.png}}
 \\
 \emph{From left to right:\\
-(1) The formation (red) moves towards the character (goldenrod) during its Turn.\\
-(2) The Move begins with the members of the first row (who keep 1 tile distance).\\
+(1) The formation (red) will move towards the character (goldenrod) during its Turn.\\
+(2) Its Move begins with the members of the first row (who keep 1 tile distance).\\
 (3) Then the rest of the phalanx fills in, maintaining the formation as best as possible.}\\
 \ \\
 \framebox{\includegraphics[width = 0.3\textwidth]{./maps/c214d.png}}
@@ -47,6 +41,12 @@ For this encounter, \emph{doom events} are triggered by the remaining number of 
 \\
 \emph{The formation moves sideways via the nearest column if the character stands off to one side.}
 \end{center}
+
+\textbf{Attacking} -- After the entire formation has moved, each entity attacks as an individual. Resolve each attack sequentially, starting from entities in the front row. When an encounter roll has multiple attacks, resolve the first attack type for all entities before moving onto the second. Entities in the formation may freely attack past each other.\\
+
+\begin{tcolorbox}
+\textbf{Note:} When a member of the formation is defeated, the formation should fill-in towards the front next time it moves. Give rear members whatever bonus Move necessary to re-dress the formation.
+\end{tcolorbox}
 
 \pagebreak
 
@@ -93,7 +93,7 @@ For this encounter, \emph{doom events} are triggered by the remaining number of 
 \textbf{A:} \emph{Shield Bash}\newline \textbf{B:} \emph{Thrown Debris}
 \end{tabular}
 \end{center}
-\textbf{Note:} Resolve the enemies’ Turns in any order of the player’s choosing.
+\textbf{Note:} All remaining enemies share a single roll. Resolve the remaining enemies’ Turns in any order of the player’s choosing.
 \end{tcolorbox}
 
 \pagebreak
@@ -103,31 +103,31 @@ For this encounter, \emph{doom events} are triggered by the remaining number of 
 \ \\
 {\large \textbf{The Lost Phalanx}}\\\\
 \begin{tabular}{s s s}
-\textbf{HP:} N/A & \multicolumn{2}{l}{\textbf{Move:} 3, keeps 1 tile distance}\\
+\textbf{HP:} N/A & \multicolumn{2}{l}{\textbf{Move:} 4, keeps 1 tile distance}\\
 \end{tabular}\\
 
-\emph{Formation Fighter -- Hollowed Prisoner Phalanx:} This entity consists of multiple, individual entities. Remove an entity for every 3 damage assigned to \textbf{HP}. See the Formation Fighter Rules section on the previous page for more details.\\
+\emph{Formation Fighter -- Hollowed Prisoner Phalanx:} This entity consists of multiple, individual entities. See the Formation Fighter Rules section on the previous page for more details.\\
 
 \emph{Shieldwall:} All entities in this formation always possess \emph{Shield Up!} and have unlimited shield Stability.\\
 
 \textbf{Attacks:}
 \begin{itemize}
-\item \emph{Charge!} - Move The Lost Phalanx directly forward (via the front row/column) in a straight \& snaking line until any member attempts to Move onto an impassable tile, map boundary, or the character’s tile. In that case, end the Move for the entire formation. If the character’s tile is encountered in this manner, inflict 2 \emph{Unparryable} and \emph{Undodgeable} Crush damage, Knockback 2, and Knockdown on the character. \emph{Always resolve this attack, regardless of whether it will strike the character.}
+\item \emph{Charge!} - Move The Lost Phalanx directly forward (via its general orientation) in a straight line, until any member attempts to Move onto an impassable tile. Once any member of the formation’s movement is halted, end the Move for the entire formation. If the character’s tile is encountered during this movement, inflict 2 \emph{Unparryable} and \emph{Undodgeable} Crush damage, Knockback 2, and Knockdown on the character. Use the Knockback effect to move the character out of the formation’s way.\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
 \end{itemize}
 \hrule
 \ \\
 \begin{tcolorbox}
-\textbf{Note:} Because of \emph{Shieldwall}, there’s no need to track \emph{Shield Up!}, or shield Stability or Durability, for individual members of The Lost Phalanx. Just reduce all incoming damage by 1 for each member.
+\textbf{Note:} Because of \emph{Shieldwall}, there’s no need to track \emph{Shield Up!} or shield Stability/Durability for individual members of The Lost Phalanx. Just reduce all incoming damage by 1 for each member.
 \end{tcolorbox}
 \begin{tcolorbox}
-\textbf{Note:} \emph{Charge!} is \emph{Undodgeable}, but the character might still be able to move out of the way via \emph{Dodge!}
+\textbf{Note:} \emph{Charge!} has \emph{Undodgeable} damage, but the character can still move out of the way via \emph{Dodge!}
 \end{tcolorbox}
 \ \\
 \hrule
 \ \\
 {\large \textbf{Hollowed Prisoner Phalanx}}\\\\
 \begin{tabular}{s s s}
-\textbf{HP:} 3 & \multicolumn{2}{l}{\textbf{Move:} 0}\\
+\textbf{HP:} 3 & \multicolumn{2}{l}{\textbf{Move:} 2}\\
 \textbf{Shield Def:} 1 & \textbf{Shield Stab:} 5 & \textbf{Shield Dur:} 1\\
 \end{tabular}\\
 
@@ -137,7 +137,7 @@ For this encounter, \emph{doom events} are triggered by the remaining number of 
 \begin{itemize}
 \item \emph{Makeshift Spear} - Deal 1 Pierce damage to an entity within 2 tiles. Do not remove \emph{Shield Up!}
 \item \emph{Shield Push} - Inflict Knockback 1 to an adjacent entity. Do not remove \emph{Shield Up!}
-\item \emph{Shield Bash} - Deal 1 Crush damage and Knockback 1 to an adjacent entity. Do not remove \emph{Shield Up!}
+\item \emph{Shield Bash} - Deal 1 Crush damage and Knockback 1 to an adjacent entity.
 \item \emph{Thrown Debris} - Deal 1  ranged Crush damage to an entity that is within 2-3 tiles.
 \end{itemize}
 \hrule
