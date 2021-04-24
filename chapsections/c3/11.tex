@@ -34,8 +34,8 @@ Defeat all enemies
 \begin{tabular}{ L | L }
 \multicolumn{1}{c|}{\textbf{1-3}} & 
 \multicolumn{1}{c}{\textbf{4-6}} \\
-\textbf{A:} \emph{Gilding}\newline \textbf{B:} \emph{Dazzle}\newline \textbf{C:} \emph{Greedy Endurance} &
-\textbf{A:} \emph{Gilding}\newline \textbf{B:} \emph{Golden Arrow}\newline \textbf{C:} \emph{Clinking Motivation} \\
+\textbf{A:} \emph{Gilding}\newline \textbf{B:} \emph{Dazzle}\newline \textbf{C:} \emph{Greedy Endurance}\newline \emph{This result is only exhausted after its second token} &
+\textbf{A:} \emph{Gilding}\newline \textbf{B:} \emph{Golden Arrow}\newline \textbf{C:} \emph{Clinking Motivation}\newline \emph{This result is only exhausted after its second token} \\
 \end{tabular}
 \end{center}
 \textbf{Note:} If \emph{Gilding} is already in effect, Nastya will not cast it again (resolve the next behavior).
@@ -48,9 +48,9 @@ Defeat all enemies
 \multicolumn{1}{c|}{\textbf{1}} & 
 \multicolumn{1}{c|}{\textbf{2-5}} & 
 \multicolumn{1}{c}{\textbf{6}} \\
-\textbf{A:} \emph{Sudden. Hidden Dagger}\newline \textbf{B:} \emph{Shield Up!} Move &
-\textbf{A:} \emph{Shield Up!} Move\newline \textbf{B:} Move. \emph{Mace} &
-\textbf{A:} \emph{Bash}\newline \textbf{B:} Move. \emph{Mace} \\
+\textbf{A:} \emph{Sudden. Hidden Seax}\newline \textbf{B:} \emph{Shield Up!} Move &
+\textbf{A:} \emph{Shield Up!} Move\newline \textbf{B:} Move. \emph{Guarded Mace} &
+\textbf{A:} \emph{Bash}\newline \textbf{B:} Move. \emph{Guarded Mace} \\
 \end{tabular}
 \end{center}
 \end{tcolorbox}
@@ -84,9 +84,9 @@ Move. \emph{Claymore} &
 
 \textbf{Attacks:}
 \begin{itemize}
-\item \emph{Mace} -  Deal 2 Crush damage on an adjacent entity.
+\item \emph{Guarded Mace} -  Deal 2 Crush damage on an adjacent entity. Do not remove \emph{Shield Up!}
 \item \emph{Bash} - Deal 1 Crush damage and inflict Stun on an adjacent entity.
-\item \emph{Hidden Dagger} - Move 1. Deal 1 Slash damage and inflict Bleeding on an adjacent entity.
+\item \emph{Hidden Seax} - Move 1. Deal 1 Slash damage and inflict Bleeding on an adjacent entity.
 \end{itemize}
 
 \begin{tcolorbox}
@@ -97,7 +97,7 @@ Move. \emph{Claymore} &
 
 {\large \textbf{Goldhand Egor}}\\\\
 \begin{tabular}{s s s}
-\textbf{HP:} 6 & \textbf{Move:} 3\\
+\textbf{HP:} 7 & \textbf{Move:} 3\\
 \textbf{P.DEF:} 1 & \textbf{PS:} 1\\
 \end{tabular}\\
 
@@ -106,8 +106,8 @@ Move. \emph{Claymore} &
 \textbf{Attacks:}
 \begin{itemize}
 \item \emph{Claymore} -  Deal 3 Slash damage to an adjacent entity.
-\item \emph{Lunge} - Move 2 in a straight or snaking line. Deal 2 \emph{Unparryable} Pierce damage to an adjacent entity.
-\item \emph{Wild Swing} - Move 2. Deal 3 \emph{Unparryable} Slash damage to \emph{all} hexes in a half-moon pattern centered on an adjacent entity.
+\item \emph{Lunge} - Move 2 in a straight or snaking line. Deal 2 \emph{Unparryable} Pierce ranged melee damage to an entity within 2 tiles.
+\item \emph{Wild Swing} - Move 2. Deal 3 \emph{Unparryable} Slash damage, Knockback 2, and Knockdown to \emph{all} hexes in a half-moon pattern centered on an adjacent entity.
 \item \emph{Huff \& Puff} - No effect.
 \end{itemize}
 \hrule
@@ -124,9 +124,9 @@ Move. \emph{Claymore} &
 
 \textbf{Attacks:}
 \begin{itemize}
-\item \emph{Golden Arrow} -  Deal 1 \emph{Lock-On} Magic damage to an entity within 4 hexes.
+\item \emph{Golden Arrow} -  Deal 1 \emph{Lock-On} Magic ranged damage to an entity within 4 hexes.
 \item \emph{Dazzle} - Inflict Stun on an enemy within 2-3 hexes.
-\item \emph{Gilding} - Add 1 Enhanced Defense: \textbf{P.DEF} (2) condition token to Lustrous Nastya’s enemy sheet.
+\item \emph{Gilding} - Add 1 Enhanced Defense: \textbf{P.DEF} (3) condition token to Lustrous Nastya’s enemy sheet.
 \item \emph{Clinking Motivation} - For this Turn, Goldhand Egor’s \emph{Huff \& Puff} attack is replaced by \emph{Wild Swing}.
 \item \emph{Greedy Endurance} - Clear Goldhand Vitalik’s \textbf{P.DEF} and \textbf{Shield Stab} of all damage tokens. 
 \end{itemize}
@@ -158,13 +158,13 @@ Looking over the dead, you find little clue as to their identity or purpose. Thi
 
 Each of them has a lapel of a golden hand affixed to their clothing. You find that this symbol means something to you. Somewhere deep in your memory’s wells, you once knew who these people were--and that this behavior is typical of their organization.\\
 
->> Souls of Desperate Mercenaries (40)\\
+>> Souls of Greedy Mercenaries (30)\\
 \gain{Claymore}\\
 \gain{Mace}\\
-\gain{Rondel Dagger}\\
+\gain{Seax}\\
 \gain{Kite Shield}\\
 \gain{Ornate Wand}\\
-\gain{Colorful Leather Set}\\
+\gain{Colorful Leather Armor}\\
 \gain{Enchant Shield}\\
 \gain{Dazzle}\\
 >> \turnto{c311x1}
@@ -181,6 +181,6 @@ You burst from beneath the cot and make a dash for it. Something swings by your 
 >> \turnto{c311x2}
 
 \subsection*{Retreat}
-In a panicked hurry, you fling open a door--and discover a lavatory.\\
+In a panicked hurry, you fling open the door--and discover a lavatory.\\
 
 >> \turnto{c311x2}
