@@ -1,5 +1,6 @@
+%% Go through the armory and make sure everything appears
+
 weapons:
-Seax
 
 shields:
 
@@ -10,10 +11,12 @@ catalysts:
 rings:
 
 flasks:
-moonlit flask
 
 missiles:
 
 misc:
 
 attunements:
+Cat Stance
+Dirty Trick
+Trip
