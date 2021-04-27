@@ -1,5 +1,3 @@
-%% Go through the armory and make sure everything appears
-
 weapons:
 
 shields:
@@ -17,6 +15,3 @@ missiles:
 misc:
 
 attunements:
-Cat Stance
-Dirty Trick
-Trip

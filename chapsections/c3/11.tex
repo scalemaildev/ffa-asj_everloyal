@@ -49,7 +49,7 @@ Defeat all enemies
 \multicolumn{1}{c|}{\textbf{2-5}} & 
 \multicolumn{1}{c}{\textbf{6}} \\
 \textbf{A:} \emph{Sudden. Hidden Seax}\newline \textbf{B:} \emph{Shield Up!} Move &
-\textbf{A:} \emph{Shield Up!} Move\newline \textbf{B:} Move. \emph{Guarded Mace} &
+\textbf{A:} \emph{Shield Up!} Move\newline \textbf{B:} Move. \emph{Guarded Mace}\newline \emph{This result is only exhausted after its third token} &
 \textbf{A:} \emph{Bash}\newline \textbf{B:} Move. \emph{Guarded Mace} \\
 \end{tabular}
 \end{center}
@@ -63,7 +63,7 @@ Defeat all enemies
 \multicolumn{1}{c|}{\textbf{2-5}} &
 \multicolumn{1}{c}{\textbf{6}}\\
 \textbf{A:} \emph{Lunge}\newline \textbf{B:} Move &
-Move. \emph{Claymore} &
+Move. \emph{Claymore}\newline \emph{This result is only exhausted after its third token} &
 \emph{Huff \& Puff} \\
 \end{tabular}
 \end{center}
@@ -76,7 +76,7 @@ Move. \emph{Claymore} &
 {\large \textbf{Goldhand Vitalik}}\\\\
 \begin{tabular}{s s s}
 \textbf{HP:} 6 & \textbf{Move:} 2\\
-\textbf{P.DEF}: 1\\
+\textbf{P.DEF:} 1 & \textbf{RES:} 1\\
 \textbf{Shield Def:} 2 & \textbf{Shield Stab:} 5 & \textbf{Shield Dur:} 1\\
 \end{tabular}\\
 
@@ -100,7 +100,7 @@ Move. \emph{Claymore} &
 {\large \textbf{Goldhand Sergey}}\\\\
 \begin{tabular}{s s s}
 \textbf{HP:} 7 & \textbf{Move:} 3\\
-\textbf{P.DEF:} 1 & \textbf{RES:} 1 & \textbf{PS:} 1\\
+\textbf{P.DEF:} 1 & \textbf{RES:} 2 & \textbf{PS:} 1\\
 \end{tabular}\\
 
 \emph{Intelligent:} This entity is human, or possesses a human-like intellect.\\
@@ -117,7 +117,7 @@ Move. \emph{Claymore} &
 {\large \textbf{Lustrous Nastya}}\\\\
 \begin{tabular}{s s s}
 \textbf{HP:} 3 & \textbf{Move:} 0\\
-\textbf{M.DEF:} 2 & \textbf{F.DEF:} 2\\
+\textbf{M.DEF:} 2 & \textbf{F.DEF:} 2 & \textbf{D.DEF:} 1\\
 \end{tabular}\\
 
 \emph{Intelligent:} This entity is human, or possesses a human-like intellect.\\
@@ -161,7 +161,7 @@ Looking over the dead, you find little clue as to their identity or purpose. Thi
 Each of them has a lapel of a golden hand affixed to their clothing. You find that this symbol means something to you. Somewhere deep in your memory’s wells, you once knew who these people were--and that this behavior is typical of their organization.\\
 
 >> Souls of Greedy Mercenaries (30)\\
-\gain{Copper Schilling} x4\\
+\gain{Copper Schilling} x2\\
 \gain{Silver Schilling} x2\\
 \gain{Claymore}\\
 \gain{Mace}\\
@@ -170,8 +170,8 @@ Each of them has a lapel of a golden hand affixed to their clothing. You find th
 \gain{Ornate Wand}\\
 \gain{Colorful Leather Armor}\\
 \gain{Ornate Gold Ring}\\
-\gain{Enchant Shield}\\
-\gain{Dazzle}\\
+\gainx{Enchant Shield}\\
+\gainx{Dazzle}\\
 >> \turnto{c311x1}
 
 \subsection*{Defeat}
