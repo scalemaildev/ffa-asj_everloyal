@@ -21,9 +21,9 @@
 \hline
 \rowcolor{white} \textbf{Weapon} & \textbf{SP} & \textbf{Dam} & \textbf{Wt} & \textbf{Hd} & \textbf{Rg} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{S.Attacks} & \textbf{Notes}\\
 \hline
-\makeitem{Fighting Knife} & 1 & 1 S,P & 1 & 1H & 1 & 1 & STR - 3|D\newline DEX - 3|D & Backstab & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
+\makeitem{Fighting Knife} & 1 & 1 S,P & 1 & 1H & 1 & 1 & STR - 4|D\newline DEX - 6|B & Backstab, Lunge & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \makeitem{Knife} & 1 & 1 S,P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 3|D & Backstab & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
-\makeitem{Main-Gauche} & 1 & 1 P & 1H & 1 & 1 & - & STR - 5|D\newline DEX - 10|B & N/A & Coup De Grâce \textbf{SP} cost is reduced to Wep\newline Parry-like actions can use \textbf{SP} dice 1 score higher than the target die (only if this weapon is currently held)\\
+\makeitem{Main-Gauche} & 1 & 1 P & 1H & 1 & 1 & - & STR - 5|D\newline DEX - 10|B & N/A & Coup De Grâce \textbf{SP} cost is reduced to Wep.\newline Parry-like actions can use \textbf{SP} dice 1 score higher than the target die (only if this weapon is currently held)\\
 \makeitem{Seax} & 1 & 1 S,P & 1 & 1H & 1 & 1 & STR - 4|D\newline DEX - 6|B & Cut, Lunge & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \makeitem{Stiletto} & 1 & 1 P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 9|B & Backstab, Lunge, Puncture & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \hline
@@ -37,7 +37,6 @@
 \hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Swords}}\\
 \hline
-\makeitem{Broadsword} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 7|C & Cut & N/A \\
 \makeitem{Broken Shortsword} & 2 & 2 S,P & 1 & 1H & 1 & - & STR - 5|D\newline DEX - 5|D & N/A & Deals -1 damage for Pierce attacks\\
 \makeitem{Claymore} & 3 & 4 S,P & 3 & 2H & 1 & 2 & STR - 10|B\newline DEX - 7|C & Lunge & Pierce attacks are range 2\\
 \makeitem{Saber} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 10|B & Cut, Fend & N/A \\
@@ -46,7 +45,7 @@
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Bludgeons}}\\
 \hline
 \makeitem{Truncheon} & 1 & 1 C & 1 & 1H & 1 & - & STR - 4|D\newline DEX - 3|D & N/A & N/A\\
-\makeitem{Mace} & 3 & 3 C & 2 & 1H & 1 & - & STR - 9|B\newline DEX - 4|D & N/A & Cannot be Broken\\
+\makeitem{Mace} & 3 & 3 C & 2 & 1H & 1 & - & STR - 8|B\newline DEX - 4|D & N/A & Cannot be Broken\\
 \hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Polearms}}\\
 \hline
@@ -81,7 +80,7 @@
 \makeitem{Meat Hook} & 1 & 1 P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \makeitem{Sock Full of Rocks} & 1 & 1 C & - & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & \emph{Ephemeral}\newline Overhead deals +1 damage\\
 \makeitem{Torch} & 1 & 1 C & 1 & 1H & 1 & - & N/A & Light/Douse,\newline Set Aflame &  Must be lit to use Set Aflame\newline Counts as a light source when lit\\
-\makeitem{Whip} & 2 & 1 S & 1 & 1H & 2-3 & - & STR - 4|E\newline DEX - 8|C & Defeat Guard, Pull & If this weapon assigns any damage to \textbf{HP} slots in a single attack, it also inflicts 1 Bleed\newline Cannot commit Parry or Coup De Grâce\\
+\makeitem{Whip} & 2 & 1 S & 1 & 1H & 2-3 & - & STR - 4|E\newline DEX - 8|C & Defeat Guard, Pull & If this weapon assigns any damage to \textbf{HP} slots in a single attack, it also inflicts 1 Bleed.\newline Cannot commit Parry or Coup De Grâce\\
 \hline
 \end{tabularx}
 \end{center}
@@ -93,7 +92,7 @@
 \hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Unique Weapons}}\\
 \hline
-\makeitem{Lucky Razor} & 1 & 1 S & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 3|D & Backstab & While equipped, immediately after rolling the \emph{stamina pool} the character may re-roll 1 \textbf{SP} Die. Remember that re-rolls are once-per-die and the second result is final.\newline Coup De Grâce \textbf{SP} cost is reduced to Wep \\
+\makeitem{Lucky Razor} & 1 & 1 S & 1 & 1H & 1 & 1 & STR - 4|D\newline DEX - 6|B & Backstab, Lunge & While equipped, immediately after rolling the \emph{stamina pool} the character may re-roll 1 \textbf{SP} Die. Remember that re-rolls are once-per-die and the second result is final.\newline Coup De Grâce \textbf{SP} cost is reduced to Wep \\
 \hline
 \end{tabularx}
 \end{center}
