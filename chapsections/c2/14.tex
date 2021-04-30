@@ -18,12 +18,12 @@ For this encounter, \emph{doom events} are triggered by the remaining number of 
 \pagebreak
 
 \subsection*{Formation Fighter Rules}
-A Formation Fighter is a group of entities that all act together during a single Turn. However, each entity still attacks individually, and retains its own \textbf{HP} pool.\\
+A Formation Fighter is a group of entities that all act together during a single Turn. However, each entity still attacks individually, and retains its own \textbf{HP} value. Due to the large number of constantly shifting enemies, it would be easier to place damage directly on the enemy tokens instead of tracking them via \textbf{HP} circles.\\
 
-\textbf{The Formation} -- The Lost Phalanx must maintain its original “two columns” formation as best as possible, though it may snake and bend. See the example images below.\\
+\textbf{The Formation} -- The Lost Phalanx must maintain its ‘two columns’ formation as best as possible, though it may snake and bend. See the example images below.\\
 \emph{There will be difficult calls for how to organize this once members start dying; use your best judgement.}\\
 
-\textbf{Movement} -- During the \emph{counterbeat}, the entire formation moves all at once. Start by moving the front row towards the character, and then fill in the rest of the phalanx behind it.\\
+\textbf{Movement} -- During the \emph{counterbeat}, the entire formation moves all at once. Start by moving the front row towards the character, and then fill in the rest of the phalanx behind it in a logical fashion.\\
 The ‘front’ is whichever row is closest to the character at the start of the Turn (in terms of actual movement, not raw hexes). If the character is positioned off to one side of the phalanx, so that multiple rows are equidistant, then then move the formation via the nearest column instead (the formation will move sideways).
 
 \subsection*{Movement Example Images}
@@ -34,9 +34,9 @@ The ‘front’ is whichever row is closest to the character at the start of the
 \\
 \emph{From left to right:\\
 (1) The formation (red) will move towards the character (goldenrod) during its Turn.\\
-(2) Its Move begins with the members of the first row (who keep 1 tile distance).\\
+(2) Its Move begins with the members of the first row.\\
 (3) Then the rest of the phalanx fills in, maintaining the formation as best as possible.}\\
-\ \\
+
 \framebox{\includegraphics[width = 0.3\textwidth]{./maps/c214d.png}}
 \framebox{\includegraphics[width = 0.3\textwidth]{./maps/c214e.png}}
 \framebox{\includegraphics[width = 0.3\textwidth]{./maps/c214f.png}}
@@ -62,25 +62,31 @@ The ‘front’ is whichever row is closest to the character at the start of the
 \multicolumn{1}{c|}{\textbf{3}} & 
 \multicolumn{1}{c}{\textbf{4-5}} \\
 \emph{Charge!} &
-\textbf{A:} \emph{Thrown Debris}\newline \textbf{B:} Move &
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Makeshift Spear} \\
+\emph{Thrown Debris.} Move &
+\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Shield Bash} \\
 \hline
 \multicolumn{1}{c|}{\textbf{6}} & 
 \multicolumn{1}{c|}{\textbf{7}} & 
 \multicolumn{1}{c}{\textbf{8}} \\
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} \emph{Thrown Debris} &
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Makeshift Spear} &
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} \emph{Thrown Debris} \\
+\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} \emph{Thrown Debris.} Move &
+\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Shield Bash} &
+\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} \emph{Thrown Debris.} Move \\
 \hline
 \multicolumn{1}{c|}{\textbf{9-10}} & 
 \multicolumn{1}{c|}{\textbf{11}} & 
 \multicolumn{1}{c}{\textbf{12}} \\
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Makeshift Spear} &
-\textbf{A:} \emph{Thrown Debris}\newline \textbf{B:} Move &
+\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Shield Bash} &
+\emph{Thrown Debris.} Move &
 \emph{Charge!}
 \end{tabular}
 \end{center}
 \end{tcolorbox}
+\ \\
+
+\begin{tcolorbox}
+\textbf{Note:} Look carefully. There is both \emph{Shield Push} and \emph{Shield Bash} in these tables, which are different attacks.
+\end{tcolorbox}
+\ \\
 
 \begin{tcolorbox}
 \textbf{B - Hollowed Prisoner Phalanxes}\\
@@ -106,7 +112,7 @@ The ‘front’ is whichever row is closest to the character at the start of the
 \ \\
 {\large \textbf{The Lost Phalanx}}\\\\
 \begin{tabular}{s s s}
-\textbf{HP:} N/A & \multicolumn{2}{l}{\textbf{Move:} 4, keeps 1 tile distance}\\
+\textbf{HP:} N/A & \multicolumn{2}{l}{\textbf{Move:} 4}\\
 \end{tabular}\\
 
 \emph{Formation Fighter:} This entity consists of multiple, individual entities. See the Formation Fighter Rules section for details.\\
@@ -115,7 +121,7 @@ The ‘front’ is whichever row is closest to the character at the start of the
 
 \textbf{Attacks:}
 \begin{itemize}
-\item \emph{Charge!} - Move The Lost Phalanx directly forward (via its general orientation) in a straight line, until any member attempts to Move onto an impassable tile (including the character’s position). Once any member of the formation’s movement is halted, end the Move for the entire formation. If the character’s position is encountered during this movement, inflict 2 \emph{Unparryable} and \emph{Undodgeable} Crush damage, Knockback 2, and Knockdown on the character.\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
+\item \emph{Charge!} - Move the ‘front’ towards the character in a straight or snaking line, until any member attempts to Move onto an impassable tile (including the character’s position). Once any member’s movement is halted, end the Move and fill-in the formation. If the character’s position is encountered during this movement, inflict 2 \emph{Unparryable} and \emph{Undodgeable} Crush damage, Knockback 2, and Knockdown on the character.\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
 \end{itemize}
 \hrule
 \ \\

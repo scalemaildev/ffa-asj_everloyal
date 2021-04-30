@@ -14,7 +14,7 @@ Defeat the Auroks
 \subsection*{Doom Events}
 \begin{itemize}
 \item \textbf{Round 5:} \emph{The Auroks roars and paws at the ground. Its movements are growing more frantic.} The Auroks gains 1 Move value.
-\item \textbf{Round 8:} \emph{The Auroks bristles and foams at the mouth.} The Auroks gains 1 \textbf{P.DEF}.
+\item \textbf{Round 8:} \emph{The Auroks bristles and foams at the mouth.} The Auroks gains 1 of each Defense value.
 \item \textbf{Round 10:} \emph{The Auroks lets out a vicious roar.} Increase the damage (if any) of the Auroks’ attacks by 1.
 \end{itemize}
 
@@ -52,7 +52,7 @@ Clear 3 \textbf{HP} slots on the status sheet and gain 1 Enhanced Defense: \text
 \multicolumn{1}{c}{\textbf{4-5}} \\
 \emph{Sudden. Vicious Roar} &
 \textbf{A:} \emph{Hind Kick}\newline \textbf{B:} Move.  \emph{Pounce}&
-\textbf{A:} \emph{Gore. Gore}\newline \textbf{B:} \emph{Charge} \\
+\textbf{A:} \emph{Gore. Gore}\newline \textbf{B:} \emph{ Frenzied Charge} \\
 \hline
 \multicolumn{1}{c|}{\textbf{6}} & 
 \multicolumn{1}{c|}{\textbf{7}} & 
@@ -64,7 +64,7 @@ Clear 3 \textbf{HP} slots on the status sheet and gain 1 Enhanced Defense: \text
 \multicolumn{1}{c|}{\textbf{9-10}} & 
 \multicolumn{1}{c|}{\textbf{11}} & 
 \multicolumn{1}{c}{\textbf{12}} \\
-\textbf{A:} \emph{Gore. Gore}\newline \textbf{B:} \emph{Charge} &
+\textbf{A:} \emph{Gore. Gore}\newline \textbf{B:} \emph{Frenzied Charge} &
 \textbf{A:} \emph{Hind Kick}\newline \textbf{B:} Move.  \emph{Pounce} &
 \emph{Sudden. Vicious Roar} \\
 \end{tabular}
@@ -78,7 +78,7 @@ Clear 3 \textbf{HP} slots on the status sheet and gain 1 Enhanced Defense: \text
 \ \\
 {\large \textbf{The Auroks}}\\\\
 \begin{tabular}{s s s}
-\textbf{HP:} 45 & \textbf{Move:} 3\\
+\textbf{HP:} 46 & \textbf{Move:} 3\\
 \textbf{P.DEF:} 1 & \textbf{F.DEF:} 1 & \textbf{M.DEF:} 1 \\
 \textbf{L.DEF:} 1 & \textbf{D.DEF:} 1 & \textbf{RES:} 2 \\
 \end{tabular}\\
@@ -87,19 +87,19 @@ Clear 3 \textbf{HP} slots on the status sheet and gain 1 Enhanced Defense: \text
 
 \emph{Great Foe:} This entity ignores all conditions (including Knockback and Knockdown) inflicted by normal sources, except for Blazing and Bleeding, and is immune to Backstab (but not Coup de Grâce).\\
 
-\emph{Tottering:} If this entity assigns 9 damage tokens to \textbf{HP} slots in a single Round, it is inflicted with Knockdown and Stun upon assigning the ninth token.\\
+\emph{Tottering:} If this entity assigns 10 damage tokens to its \textbf{HP} in a single Turn, it is inflicted with Knockdown and Stun upon assigning the tenth token.\\
 
 \textbf{Attacks:}
 \begin{itemize}
 \item \emph{Gore} -  Move 1. Deal 2 \emph{Unparryable} Pierce damage to an adjacent entity (from head tile).
 \item \emph{Pounce} - Move 2. Deal 3 \emph{Unparryable} Crush damage and Knockdown in a half-moon pattern (from head tile).
 \item \emph{Hind Kick} - Deal 3 \emph{Unparryable} Crush damage, Knockback 2, and Knockdown to an adjacent entity (from tail tile).
-\item \emph{Charge} - Move 5 directly forward in a straight line, until the Auroks attempts to Move onto an impassable tile (including the character’s position). If the character’s position is encountered during this movement, inflict 3 \emph{Unparryable} Pierce damage, Knockback 3, and Knockdown to the character. The Auroks may turn one hex before charging (reducing the charge to Move 4).\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
+\item \emph{Frenzied Charge} - Move towards the character in a straight or snaking line, until the Auroks attempts to Move onto an impassable tile (including the character’s position). If the character’s position is encountered during this movement, inflict 4 \emph{Unparryable} and \emph{Undodgeable} Pierce damage, Knockback 3, and Knockdown to the character. The Auroks may freely turn one hex before charging.\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
 \item \emph{Vicious Roar} - Inflict \emph{Inevitable} Flinch on all hexes within 3 tiles (from head tile).
 \end{itemize}
 
 \begin{tcolorbox}
-\textbf{Note:} While \emph{Vicious Roar} is \emph{Inevitable}, the character may still move out of range using the Move value of \emph{Dodge!}
+\textbf{Note:} While \emph{Charge} deals \emph{Undodgeable} damage, the character may still get out of the way using their reaction’s implicit Move value
 \end{tcolorbox}
 
 \pagebreak
@@ -130,7 +130,8 @@ The Auroks cranes its neck to stare. The vagabond’s reflection grows larger in
 
 And, hefting his cleaver with both hands, Lor does the Auroks a great mercy.\\
 
->> Soul of a Great Beast (60)\\
+>> Soul of a Great Beast (40)\\
+>> \textbf{HMN} + 1\\
 >> \turnto{c41x1}
 
 \subsection*{Defeat}
