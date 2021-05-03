@@ -30,19 +30,21 @@ Defeat Zealot Eóghainn
 \multicolumn{1}{c|}{\textbf{1}} & 
 \multicolumn{1}{c|}{\textbf{2}} & 
 \multicolumn{1}{c}{\textbf{3}} \\
-\emph{Secret Parable} &
-\textbf{A:} \emph{Secret Word}\newline \textbf{B:} \emph{Open-Palm Slap}\newline \textbf{C:} \emph{Secret Chant} &
-\textbf{A:} \emph{Open-Palm Slap}\newline \textbf{B:} \emph{Secret Word} \\
+\emph{Occult Parable} &
+\textbf{A:} \emph{Fevered Chanting}\newline \textbf{B:} \emph{Open-Palm Slap}\newline \textbf{C:} \emph{Secret Word} &
+\textbf{A:} \emph{Open-Palm Slap}\newline \textbf{B:} \emph{Secret Word}\newline \textbf{C:} \emph{Occult Parable}\\
 \hline
 \multicolumn{1}{c|}{\textbf{4}} & 
 \multicolumn{1}{c|}{\textbf{5}} & 
 \multicolumn{1}{c}{\textbf{6}} \\
-\textbf{A:} \emph{Open-Palm Slap}\newline \textbf{B:} \emph{Secret Word} &
-\textbf{A:} \emph{Secret Word}\newline \textbf{B:} \emph{Open-Palm Slap}\newline \textbf{C:} \emph{Secret Chant} &
-\emph{Secret Parable} \\
+\textbf{A:} \emph{Open-Palm Slap}\newline \textbf{B:} \emph{Secret Word}\newline \textbf{C:} \emph{Occult Parable} &
+\textbf{A:} \emph{Fevered Chanting}\newline \textbf{B:} \emph{Open-Palm Slap}\newline \textbf{C:} \emph{Secret Word} &
+\emph{Occult Parable} \\
 \end{tabular}
 \end{center}
-\textbf{Note:} Each round, all Risen Prisoner enemies will Move towards the character and attempt \emph{Swipe} after Eóghainn’s Turn.
+ Each round, all Risen Prisoner enemies will Move towards the character and attempt \emph{Swipe} after Eóghainn’s Turn.\\
+ 
+ \textbf{Note:} Zealot Eóghainn will not commit \emph{Fevered Chanting} if it is already in effect.
 \end{tcolorbox}
 
 \subsection*{Enemy Sheets}
@@ -50,22 +52,22 @@ Defeat Zealot Eóghainn
 \ \\
 {\large \textbf{Zealot Eóghainn}}\\\\
 \begin{tabular}{s s s}
-\textbf{HP:} 12 & \textbf{Move:} 0\\
+\textbf{HP:} 15 & \textbf{Move:} 0\\
 \textbf{L.DEF}: 3 & \textbf{D.DEF:} 2 & \textbf{RES:} 1\\
 \end{tabular}\\
 
 \emph{Intelligent:} This entity is human, or possesses a human-like intellect.\\
 
-\emph{Unwavering Faith:} This entity ignores the Charmed, Maddened, and Fear conditions.\\
+\emph{Unwavering Faith:} This entity ignores the Stunned, Charmed, Maddened, and Fear conditions.\\
 
 \emph{Alert:} This entity is immune to Backstab.\\
 
 \textbf{Attacks:}
 \begin{itemize}
-\item \emph{Open-Palm Slap} - Inflict Stun on an adjacent entity.
+\item \emph{Open-Palm Slap} - Inflict \emph{Unparryable} and \emph{Unblockable} Stun on an adjacent entity.
 \item \emph{Secret Word} - Deal 1 \emph{Inevitable} Smite ranged damage to an entity within 2-3 tiles.
-\item \emph{Secret Chant} - Add 1 Enhanced Defense: \textbf{P.DEF} (2) condition token to this enemy sheet.
-\item \emph{Secret Parable} - Roll 3D6. Create a hex coordinate (X,Y) from any two sums of these three dice, and place a Risen Prisoner on that tile. If no combination is valid, then re-roll.
+\item \emph{Fevered Chanting} - Add 1 Enhanced Defense: \textbf{P.DEF} (2) condition token to this enemy sheet.
+\item \emph{Occult Parable} - Roll 3D6. Create a hex coordinate (X,Y) from any two sums of these three dice, and place a Risen Prisoner on that tile. If no combination is valid, then re-roll.
 \end{itemize}
 \hrule
 \ \\
@@ -74,7 +76,7 @@ Defeat Zealot Eóghainn
 \textbf{HP:} 4 & \textbf{Move:} 3\\
 \end{tabular}\\
 
-\emph{Undead:} This entity ignores Bleed and Dark damage, and the Bleeding, Charmed, Maddened, and Fear conditions.\\
+\emph{Undead:} This entity ignores Bleed and Dark damage, and the Bleeding, Stunned, Charmed, Maddened, and Fear conditions.\\
 
 \textbf{Attack:}
 \begin{itemize}

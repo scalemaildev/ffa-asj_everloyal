@@ -26,7 +26,7 @@
 \makeitem{Fighting Knife} & 1 & 1 S,P & 1 & 1H & 1 & 1 & STR - 4|D\newline DEX - 5|C & Backstab, Lunge & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \makeitem{Knife} & 1 & 1 S,P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 3|D & Backstab & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \makeitem{Main-Gauche} & 1 & 1 P & 1H & 1 & 1 & 1 & STR - 5|D\newline DEX - 10|C & N/A & Coup De Grâce \textbf{SP} cost is reduced to Wep.\newline Parry-like actions can use \textbf{SP} dice 1 score higher than the target die (only if this weapon is currently held)\\
-\makeitem{Seax} & 1 & 1 S,P & 1 & 1H & 1 & 1 & STR - 4|D\newline DEX - 5|C & Cut, Lunge & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
+\makeitem{Seax} & 1 & 1 S,P & 1 & 1H & 1 & - & STR - 4|D\newline DEX - 5|C & Cut, Lunge & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \makeitem{Stiletto} & 1 & 1 P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 9|B & Backstab, Lunge, Puncture & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
 \hline
 \end{tabularx}
@@ -42,7 +42,7 @@
 \makeitem{Broken Shortsword} & 2 & 2 S,P & 1 & 1H & 1 & - & STR - 5|D\newline DEX - 5|D & N/A & Deals -1 damage for Pierce attacks\\
 \makeitem{Claymore} & 3 & 4 S,P & 3 & 2H & 1 & 2 & STR - 10|B\newline DEX - 7|C & Lunge & Pierce attacks are range 2\\
 \makeitem{Saber} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 10|B & Cut, Fend & N/A \\
-\makeitem{Shortsword} & 2 & 2 S,P & 2 & 1H & 1 & 1 & STR - 7|C\newline DEX - 7|C & Flurry & N/A\\
+\makeitem{Shortsword} & 2 & 2 S,P & 2 & 1H & 1 & - & STR - 6|C\newline DEX - 7|C & Flurry & N/A\\
 \hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Bludgeons}}\\
 \hline
@@ -51,7 +51,7 @@
 \hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Polearms}}\\
 \hline
-\makeitem{Halberd} & 4 & 5 S,P & 3 & 2H & 2 & 1 & STR - 13|A\newline DEX - 7|C & N/A & Sweep \textbf{SP} cost is reduced to Wep+1.\newline Spin \textbf{SP} cost is reduced to Wep+2.\newline No 1H\\
+\makeitem{Halberd} & 4 & 5 S,P & 4 & 2H & 2 & 1 & STR - 13|A\newline DEX - 7|C & N/A & Sweep \textbf{SP} cost is reduced to Wep+1.\newline Spin \textbf{SP} cost is reduced to Wep+2.\newline No 1H\\
 \makeitem{Makeshift Spear} & 1 & 1 P & 1 & 1H & 2 & - & STR - 5|D\newline DEX - 5|D & N/A & N/A\\
 \makeitem{Spear} & 2 & 2 P & 2 & 2H & 2 & 1 & STR - 7|C\newline DEX - 7|C & N/A & N/A\\
 \makeitem{Warped Spear} & 2 & 2 P & 2 & 1H & 2 & - & STR - 6|D\newline DEX - 6|D & N/A & N/A\\
@@ -61,6 +61,10 @@
 \makeitem{Breaching Axe} & 2 & 2 S & 2 & 1H & 1 & 1 & STR - 8|C\newline DEX - 6|D & Shieldbreak & N/A\\
 \makeitem{Battleaxe} & 3 & 3 S & 3 & 1H & 1 & 1 & STR - 10|B\newline DEX - 7|D & Shieldbreak & Cleave \textbf{SP} cost is reduced to Wep\\
 \hline
+\rowcolor{white} \multicolumn{10}{l}{\textbf{Ranged Weaponry}}\\
+\hline
+\makeitem{Hand Crossbow} & 1 & 1 & 1 & 1H & 5 & 1 & STR - 6|E\newline DEX - 7|C\newline INT - 6|E & N/A & Loadable ranged weapon.\newline Damage type dependent on missile (uses bolts).\newline Can commit Shoot one-handed\\
+\hline
 \end{tabularx}
 \end{center}
 
@@ -69,9 +73,6 @@
 \hline
 \rowcolor{white} \textbf{Weapon} & \textbf{SP} & \textbf{Dam} & \textbf{Wt} & \textbf{Hd} & \textbf{Rg} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{S.Attacks} & \textbf{Notes}\\
 \hline
-\rowcolor{white} \multicolumn{10}{l}{\textbf{Ranged Weaponry}}\\
-\hline
-\makeitem{Hand Crossbow} & 1 & 1 & 1 & 1H & 5 & 1 & STR - 6|E\newline DEX - 7|C\newline INT - 6|E & N/A & Loadable ranged weapon.\newline Damage type dependent on missile (uses bolts).\newline Can commit Shoot one-handed\\
 \makeitem{Light Crossbow} & 1 & 1 & 2 & 2H & 6 & 1 & STR - 8|E\newline DEX - 8|C\newline INT - 6|E & N/A & Loadable ranged weapon.\newline Damage type dependent on missile (uses bolts).\\
 \makeitem{Shortbow} & 2 & - & 1 & 2H & 2-5 & - & STR - 5|D\newline DEX - 6|C & N/A & Ranged weapon.\newline Damage and damage type dependent on missile (uses arrows)\\
 \hline
@@ -79,18 +80,10 @@
 \hline
 \makeitem{Fist} & 2 & 1 C & - & 1H & 1 & - & N/A & Flurry & Cannot be Broken\newline Increases damage by 1 at 14 \textbf{STR}/22 \textbf{STR}.\newline Used if nothing is equipped.\newline No 2H\\
 \makeitem{Loose Cobblestone} & 1 & 1 C & - & 1H & 1 & - & STR - 3|D\newline DEX - 3|E & N/A & \emph{Ephemeral}.\newline Cannot be Broken.\newline No 2H\\
-\makeitem{Meat Hook} & 1 & 1 P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & Coup De Grâce \textbf{SP} cost is reduced to Wep\\
-\makeitem{Sock Full of Rocks} & 1 & 1 C & - & 1H & 1 & - & STR - 3|D\newline DEX - 5|D & Defeat Guard & \emph{Ephemeral}.\newline Overhead deals +1 damage\\
+\makeitem{Meat Hook} & 1 & 1 P & 1 & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & Deals Pierce damage but uses the Slash moveset\\
+\makeitem{Sock Full of Rocks} & 1 & 1 C & - & 1H & 1 & - & STR - 3|D\newline DEX - 4|D & Defeat Guard & \emph{Ephemeral}\\
 \makeitem{Torch} & 1 & 1 C & 1 & 1H & 1 & - & N/A & Light/Douse,\newline Set Aflame &  Must be lit to use Set Aflame.\newline Counts as a light source when lit\\
 \makeitem{Whip} & 2 & 1 S & 1 & 1H & 2-3 & - & STR - 4|E\newline DEX - 8|C & Defeat Guard, Pull & If this weapon assigns any damage to \textbf{HP} slots in a single attack, it also inflicts 1 Bleed.\newline Cannot commit Parry or Coup De Grâce\\
-\hline
-\end{tabularx}
-\end{center}
-
-\begin{center}
-\begin{tabularx}{\textwidth}{p{0.12\textwidth}p{0.023\textwidth}p{0.054\textwidth}p{0.024\textwidth}p{0.024\textwidth}p{0.03\textwidth}p{0.03\textwidth}p{0.12\textwidth}p{0.11\textwidth}p{0.23\textwidth}}
-\hline
-\rowcolor{white} \textbf{Weapon} & \textbf{SP} & \textbf{Dam} & \textbf{Wt} & \textbf{Hd} & \textbf{Rg} & \textbf{Dur} & \textbf{Stat Reqs} & \textbf{S.Attacks} & \textbf{Notes}\\
 \hline
 \rowcolor{white} \multicolumn{10}{l}{\textbf{Unique Weapons}}\\
 \hline

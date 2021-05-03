@@ -6,25 +6,138 @@ The prisoners waver idly in their formation, adrift in their own maddened though
 Defeat all enemies
 
 \subsection*{Doom Events}
-For this encounter, \emph{doom events} are triggered by the remaining number of hollowed prisoner phalanxes, not \emph{round tallies}.
+For this encounter, \emph{doom events} are triggered by the remaining number of Hollowed Prisoner Phalanxes, not \emph{round tallies}.
 
 \begin{itemize}
 \item \textbf{10 Remaining:} \emph{The phalanx begins to march--lurching, and badly out of step.} Begin the encounter by rolling on table A.
-\item \textbf{8 Remaining:} \emph{The Lost Phalanx drags its dead members along by their chains.} The Lost Phalanx loses 1 Move value.
-\item \textbf{6 Remaining:} \emph{The number of dead members has severely slowed the formation.} The Lost Phalanx loses 1 Move value.
-\item \textbf{4 Remaining:} \emph{The remaining hollows can no longer hold their formation.} The last 4 Hollowed Prisoner Phalanx entities are no longer part of The Lost Phalanx formation, and act as individual entities. Roll on Encounter Table B for this and all future Rounds.
+\item \textbf{6 Remaining:} \emph{The Lost Phalanx drags its dead members along by their chains, severely slowing the formation.} The Lost Phalanx loses 1 Move value.
+\item \textbf{4 Remaining:} \emph{The remaining hollows can no longer hold their formation.} The last 4 Hollowed Prisoner Phalanx entities are no longer part of The Lost Phalanx formation, and act as individual entities. Roll on table B for this and all future Rounds.
 \end{itemize}
 
 \pagebreak
 
+\subsection*{Encounter Tables}
+\begin{tcolorbox}
+\textbf{A - The Lost Phalanx}\\
+\textbf{Roll:} 2D6
+\begin{center}
+\begin{tabular}{ L | L | L }
+\multicolumn{1}{c|}{\textbf{2}} & 
+\multicolumn{1}{c|}{\textbf{3}} & 
+\multicolumn{1}{c}{\textbf{4-5}} \\
+\emph{Charge!} &
+\emph{Thrown Debris.} Move &
+Move. \emph{Makeshift Spear} \\
+\hline
+\multicolumn{1}{c|}{\textbf{6}} & 
+\multicolumn{1}{c|}{\textbf{7}} & 
+\multicolumn{1}{c}{\textbf{8}} \\
+\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} \emph{Thrown Debris.} Move &
+\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Makeshift Spear} &
+\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} \emph{Thrown Debris.} Move \\
+\hline
+\multicolumn{1}{c|}{\textbf{9-10}} & 
+\multicolumn{1}{c|}{\textbf{11}} & 
+\multicolumn{1}{c}{\textbf{12}} \\
+Move. \emph{Makeshift Spear} &
+\emph{Thrown Debris.} Move &
+\emph{Charge!}
+\end{tabular}
+\end{center}
+\end{tcolorbox}
+\ \\
+
+\begin{tcolorbox}
+\textbf{Note:} Look carefully. There is both \emph{Shield Push} and \emph{Shield Bash} in these tables, which are different attacks.
+\end{tcolorbox}
+\ \\
+
+\begin{tcolorbox}
+\textbf{Note:} Resolve the next conditional behavior if no entity in the front row is capable of resolving the first listed attack.
+\end{tcolorbox}
+\ \\
+
+\begin{tcolorbox}
+\textbf{B - Hollowed Prisoner Phalanxes}\\
+\textbf{Roll:} 1D6
+\begin{center}
+\begin{tabular}{ L | L | L }
+\multicolumn{1}{c|}{\textbf{1}} & 
+\multicolumn{1}{c|}{\textbf{2-5}} & 
+\multicolumn{1}{c}{\textbf{6}} \\
+
+\textbf{A:} \emph{Thrown Debris}\newline \textbf{B:} Move. \emph{Shield Bash} &
+\emph{Shield Up!} Move. \emph{Makeshift Spear}\newline \emph{This result is only exhausted after its third token} &
+\textbf{A:} \emph{Thrown Debris}\newline \textbf{B:} Move. \emph{Shield Bash}
+\end{tabular}
+\end{center}
+\textbf{Note:} All remaining enemies share a single roll. Resolve the remaining enemies’ Turns in any order of the player’s choosing.
+\end{tcolorbox}
+
+\pagebreak
+
+\subsection*{Enemy Sheets}
+\hrule
+\ \\
+{\large \textbf{The Lost Phalanx}}\\\\
+\begin{tabular}{s s s}
+\textbf{HP:} N/A & \multicolumn{2}{l}{\textbf{Move:} 3}\\
+\end{tabular}\\
+
+\emph{Formation Fighter:} This entity consists of multiple Hollowed Prisoner Phalanxes. All members are immune to Knockback and Knockdown. See the Formation Fighter Rules section on the next page for details.\\
+
+\emph{Shieldwall:} All entities in this formation always possess \emph{Shield Up!} and have unlimited shield Stability.\\
+
+\textbf{Attacks:}
+\begin{itemize}
+\item \emph{Charge!} - Move the ‘front’ towards the character in a straight or snaking line, until any member attempts to Move onto an impassable tile (including the character’s position). Once any member’s movement is halted, end the Move and fill-in the formation. If the character’s position is encountered during this movement, inflict 2 \emph{Unparryable} and \emph{Undodgeable} Crush damage, Knockback 2, and Knockdown on the character.\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
+\end{itemize}
+\hrule
+\ \\
+\begin{tcolorbox}
+\textbf{Note:} Because of \emph{Shieldwall}, there’s no need to track \emph{Shield Up!} or shield Stability/Durability for individual members of The Lost Phalanx. Just reduce all incoming damage by 1 for each member.
+\end{tcolorbox}
+\begin{tcolorbox}
+\textbf{Note:} \emph{Charge!} has \emph{Undodgeable} damage, but the character can still move out of the way via their \emph{Dodge!} if it has implicit Move
+\end{tcolorbox}
+\ \\
+\hrule
+\ \\
+{\large \textbf{Hollowed Prisoner Phalanx}}\\\\
+\begin{tabular}{s s s}
+\textbf{HP:} 4 & \multicolumn{2}{l}{\textbf{Move:} 2 (when not in formation)}\\
+\textbf{Shield Def:} 1 & \textbf{Shield Stab:} 5 & \textbf{Shield Dur:} 1\\
+\end{tabular}\\
+
+\emph{Hollow:} This entity ignores the Stunned, Charmed, Maddened, and Fear conditions.\\
+
+\textbf{Attacks:}
+\begin{itemize}
+\item \emph{Makeshift Spear} - Deal 1 Pierce ranged melee damage to an entity within 2 tiles. Do not remove \emph{Shield Up!}
+\item \emph{Shield Push} - Inflict Knockback 1 to an adjacent entity. Do not remove \emph{Shield Up!}
+\item \emph{Shield Bash} - Deal 1 Crush damage and Knockback 1 to an adjacent entity. Do not remove \emph{Shield Up!}
+\item \emph{Thrown Debris} - Deal 1 Crush ranged damage to an entity that is within 2-3 tiles.
+\end{itemize}
+\hrule
+\ \\
+
+\begin{tcolorbox}
+\textbf{Note:} If entities are not part of The Lost Phalanx formation, they no longer benefit from \emph{Shieldwall}.
+\end{tcolorbox}
+
+\pagebreak
+
 \subsection*{Formation Fighter Rules}
-A Formation Fighter is a group of entities that all act together during a single Turn. However, each entity still attacks individually, and retains its own \textbf{HP} value. Due to the large number of constantly shifting enemies, it would be easier to place damage directly on the enemy tokens instead of tracking them via \textbf{HP} circles.\\
+A Formation Fighter is a group of entities that all act as a single unit. However, each entity still attacks individually and retains its own \textbf{HP} value. Due to the large number of constantly shifting enemies, it would be easier to place damage directly on enemy tokens instead of tracking them via \textbf{HP} circles.\\
 
-\textbf{The Formation} -- The Lost Phalanx must maintain its ‘two columns’ formation as best as possible, though it may snake and bend. See the example images below.\\
-\emph{There will be difficult calls for how to organize this once members start dying; use your best judgement.}\\
+\textbf{The Formation} -- The Lost Phalanx must maintain its ‘two columns’ formation as best as possible, though it may snake and bend. See the example images below.
 
-\textbf{Movement} -- During the \emph{counterbeat}, the entire formation moves all at once. Start by moving the front row towards the character, and then fill in the rest of the phalanx behind it in a logical fashion.\\
-The ‘front’ is whichever row is closest to the character at the start of the Turn (in terms of actual movement, not raw hexes). If the character is positioned off to one side of the phalanx, so that multiple rows are equidistant, then then move the formation via the nearest column instead (the formation will move sideways).
+\begin{tcolorbox}
+\textbf{Note:} Deciding how to control complex entities like this one is as much a part of the game’s strategy as controlling the character. All legal moves are acceptable!
+\end{tcolorbox}
+
+\textbf{Movement} -- The ‘front’ is whichever row is closest to the character at the start of the Turn (in terms of actual movement, not raw hexes). If the character is positioned to one side of the formation, so that three rows are equidistant, then then move the formation via the nearest column instead (i.e: sideways).\\
+Start by moving the front towards the character up to the formation’s Move value, keeping all its members adjacent. Then fill-in the rest of the phalanx behind the front (giving whatever bonus Move necessary to complete the formation).
 
 \subsection*{Movement Example Images}
 \begin{center}
@@ -45,116 +158,6 @@ The ‘front’ is whichever row is closest to the character at the start of the
 \end{center}
 
 \textbf{Attacking} -- After the entire formation has moved, each entity attacks as an individual. Resolve each attack sequentially, starting from entities in the front row. When an encounter roll has multiple attacks, resolve the first attack type for all entities before moving onto the second. Entities in the formation may freely attack past each other.
-
-\begin{tcolorbox}
-\textbf{Note:} When a member of the formation is defeated, the formation should fill-in towards the front next time it moves. Give rear members whatever bonus Move necessary to re-dress the formation.
-\end{tcolorbox}
-
-\pagebreak
-
-\subsection*{Encounter Tables}
-\begin{tcolorbox}
-\textbf{A - The Lost Phalanx}\\
-\textbf{Roll:} 2D6
-\begin{center}
-\begin{tabular}{ L | L | L }
-\multicolumn{1}{c|}{\textbf{2}} & 
-\multicolumn{1}{c|}{\textbf{3}} & 
-\multicolumn{1}{c}{\textbf{4-5}} \\
-\emph{Charge!} &
-\emph{Thrown Debris.} Move &
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Shield Bash} \\
-\hline
-\multicolumn{1}{c|}{\textbf{6}} & 
-\multicolumn{1}{c|}{\textbf{7}} & 
-\multicolumn{1}{c}{\textbf{8}} \\
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} \emph{Thrown Debris.} Move &
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Shield Bash} &
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} \emph{Thrown Debris.} Move \\
-\hline
-\multicolumn{1}{c|}{\textbf{9-10}} & 
-\multicolumn{1}{c|}{\textbf{11}} & 
-\multicolumn{1}{c}{\textbf{12}} \\
-\textbf{A:} \emph{Shield Push. Makeshift Spear}\newline \textbf{B:} Move. \emph{Shield Bash} &
-\emph{Thrown Debris.} Move &
-\emph{Charge!}
-\end{tabular}
-\end{center}
-\end{tcolorbox}
-\ \\
-
-\begin{tcolorbox}
-\textbf{Note:} Look carefully. There is both \emph{Shield Push} and \emph{Shield Bash} in these tables, which are different attacks.
-\end{tcolorbox}
-\ \\
-
-\begin{tcolorbox}
-\textbf{B - Hollowed Prisoner Phalanxes}\\
-\textbf{Roll:} 1D6
-\begin{center}
-\begin{tabular}{ L | L | L }
-\multicolumn{1}{c|}{\textbf{1}} & 
-\multicolumn{1}{c|}{\textbf{2-5}} & 
-\multicolumn{1}{c}{\textbf{6}} \\
-
-\textbf{A:} \emph{Thrown Debris}\newline \textbf{B:} Move. \emph{Shield Bash} &
-\textbf{A:} \emph{Shield Up!} Move\newline \textbf{B:} Move. \emph{Makeshift Spear}\newline \emph{This result is only exhausted after its third token} &
-\textbf{A:} \emph{Thrown Debris}\newline \textbf{B:} Move. \emph{Shield Bash}
-\end{tabular}
-\end{center}
-\textbf{Note:} All remaining enemies share a single roll. Resolve the remaining enemies’ Turns in any order of the player’s choosing.
-\end{tcolorbox}
-
-\pagebreak
-
-\subsection*{Enemy Sheets}
-\hrule
-\ \\
-{\large \textbf{The Lost Phalanx}}\\\\
-\begin{tabular}{s s s}
-\textbf{HP:} N/A & \multicolumn{2}{l}{\textbf{Move:} 4}\\
-\end{tabular}\\
-
-\emph{Formation Fighter:} This entity consists of multiple, individual entities. See the Formation Fighter Rules section for details.\\
-
-\emph{Shieldwall:} All entities in this formation always possess \emph{Shield Up!} and have unlimited shield Stability.\\
-
-\textbf{Attacks:}
-\begin{itemize}
-\item \emph{Charge!} - Move the ‘front’ towards the character in a straight or snaking line, until any member attempts to Move onto an impassable tile (including the character’s position). Once any member’s movement is halted, end the Move and fill-in the formation. If the character’s position is encountered during this movement, inflict 2 \emph{Unparryable} and \emph{Undodgeable} Crush damage, Knockback 2, and Knockdown on the character.\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
-\end{itemize}
-\hrule
-\ \\
-\begin{tcolorbox}
-\textbf{Note:} Because of \emph{Shieldwall}, there’s no need to track \emph{Shield Up!} or shield Stability/Durability for individual members of The Lost Phalanx. Just reduce all incoming damage by 1 for each member.
-\end{tcolorbox}
-\begin{tcolorbox}
-\textbf{Note:} \emph{Charge!} has \emph{Undodgeable} damage, but the character can still move out of the way via \emph{Dodge!}
-\end{tcolorbox}
-\ \\
-\hrule
-\ \\
-{\large \textbf{Hollowed Prisoner Phalanx}}\\\\
-\begin{tabular}{s s s}
-\textbf{HP:} 3 & \multicolumn{2}{l}{\textbf{Move:} 2 (when not in formation)}\\
-\textbf{Shield Def:} 1 & \textbf{Shield Stab:} 5 & \textbf{Shield Dur:} 1\\
-\end{tabular}\\
-
-\emph{Hollow:} This entity ignores the Charmed, Maddened, and Fear conditions.\\
-
-\textbf{Attacks:}
-\begin{itemize}
-\item \emph{Makeshift Spear} - Deal 1 Pierce ranged melee damage to an entity within 2 tiles. Do not remove \emph{Shield Up!}
-\item \emph{Shield Push} - Inflict Knockback 1 to an adjacent entity. Do not remove \emph{Shield Up!}
-\item \emph{Shield Bash} - Deal 1 Crush damage and Knockback 1 to an adjacent entity. Do not remove \emph{Shield Up!}
-\item \emph{Thrown Debris} - Deal 1 Crush ranged damage to an entity that is within 2-3 tiles.
-\end{itemize}
-\hrule
-\ \\
-
-\begin{tcolorbox}
-\textbf{Note:} If entities are not part of The Lost Phalanx formation, they no longer benefit from \emph{Shieldwall}.
-\end{tcolorbox}
 
 \pagebreak
 
@@ -189,10 +192,9 @@ The last of the phalanx falls, his makeshift spear clattering on the flagstone. 
 \subsection*{Defeat}
 A spearhead pierces your flesh, and then another. You stagger backwards, blood pulsing from your wounds like the bungholes of a cask. Your former comrades were damnably well-prepared for this. Even in the throes of madness, they manage to keep up their shieldwall.\\
 
-You have no choice but to flee: scrambling back to fog barrier under a hail of thrown debris. You’ll survive the experience, but at the cost of something inside you.\\
+You have no choice but to flee: scrambling back to fog barrier under a hail of thrown debris.\\
 
 >> Clear all \textbf{HP} slots\\
->> \textbf{HMN} - 1\\
 >> \turnto{c213}
 
 \subsection*{Retreat}
