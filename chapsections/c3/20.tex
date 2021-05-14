@@ -78,23 +78,23 @@ Clear 3 \textbf{HP} slots on the status sheet and gain 1 Enhanced Defense: \text
 \ \\
 {\large \textbf{The Auroks}}\\\\
 \begin{tabular}{s s s}
-\textbf{HP:} 45 & \textbf{Move:} 3\\
-\textbf{P.DEF:} 2 & \textbf{F.DEF:} 2 & \textbf{M.DEF:} 2 \\
-\textbf{L.DEF:} 2 & \textbf{D.DEF:} 2 & \textbf{RES:} 2 \\
+\textbf{HP:} 50 & \textbf{Move:} 3\\
+\textbf{P.DEF:} 2 & \textbf{M.DEF:} 1 & \textbf{L.DEF:} 1 \\
+\textbf{D.DEF:} 1 & \textbf{F.DEF:}2 & \textbf{RES:} 2 \\
 \end{tabular}\\
 
-\emph{Large:} This entity occupies two distinct tiles, represented by head and tail tokens. For the purposes of movement, the head tile is moved first and the tail tile is filled-in behind the head, opposite its movement or attack direction. Turning (i.e: just moving the tail) will still use a point of Move.\\
+\emph{Large:} This entity occupies two distinct tiles, represented by head and tail tokens. For movement, the designated tile is moved first and then the other tile is filled-in behind, opposite its movement or attack direction. Turning (i.e: just moving the tail) will still use a point of Move. Both of this entity’s occupied hexes can sustain AoE damage.\\
 
 \emph{Great Foe:} This entity ignores all conditions (including Knockback and Knockdown) inflicted by normal sources, except for Blazing and Bleeding, and is immune to Backstab.\\
 
-\emph{Tottering:} If this entity assigns 10 damage tokens to its \textbf{HP} in a single Turn, it is inflicted with Knockdown and Stun upon assigning the tenth token.\\
+\emph{Tottering:} If 11 damage tokens are assigned to this entity’s \textbf{HP} in a single Turn, it is inflicted with Knockdown and Stun upon assigning the eleventh token.\\
 
 \textbf{Attacks:}
 \begin{itemize}
-\item \emph{Gore} -  Move 1. Deal 3 \emph{Unparryable} Pierce damage to an adjacent entity (from head tile).
-\item \emph{Pounce} - Move 2. Deal 4 \emph{Unparryable} Crush damage and Knockdown in a half-moon pattern (from head tile).
-\item \emph{Hind Kick} - Deal 4 \emph{Unparryable} Crush damage, Knockback 2, and Knockdown to an adjacent entity (from tail tile).
-\item \emph{Frenzied Charge} - Move towards the character in a straight or snaking line, until the Auroks attempts to Move onto an impassable tile (including the character’s position). If the character’s position is encountered during this movement, inflict 5 \emph{Unparryable} and \emph{Undodgeable} Pierce damage, Knockback 3, and Knockdown to the character. The Auroks may freely turn one hex before charging.\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
+\item \emph{Gore} -  Move head 1. Deal 3 \emph{Unparryable} Pierce damage to an adjacent entity (from head tile).
+\item \emph{Pounce} - Move head 2. Deal 4 \emph{Unparryable} Crush damage and Knockdown in a half-moon pattern (from head tile).
+\item \emph{Hind Kick} - Move tail 1. Deal 4 \emph{Unparryable} Crush damage, Knockback 2, and Knockdown to an adjacent entity (from tail tile).
+\item \emph{Frenzied Charge} - Move head towards the character in a straight or snaking line, until the Auroks attempts to Move onto an impassable tile (including the character’s position). If the character’s position is encountered during this movement, deal 5 \emph{Unparryable} and \emph{Undodgeable} Pierce damage, and inflict Knockback 3 on the character. The Auroks may freely turn one hex before charging.\newline \emph{Always resolve this attack, regardless of whether it will strike the character.}
 \item \emph{Vicious Roar} - Inflict \emph{Inevitable} Flinch on all hexes within 3 tiles (from head tile).
 \end{itemize}
 

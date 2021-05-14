@@ -1,14 +1,14 @@
 You emerge from the fog disoriented and half-blind. It seems that you’ve only come two or three paces, though it felt like walking a much greater distance. Behind you, the fog wall chirrs and turns an ominous, black shade. Placing a hand on it, you discover that it has solidified in your wake. There will be no turning back.\\
 
-Something clacks off the archway by your head, and lands at your feet. An arrow. You wheel around, and your clearing vision reveals a collapsed catwalk spanning over the cell block below. On this perilous footing, two strange souls have joined forces against you: one in a guard’s uniform and iron helmet, the other in prisoner’s chains. A confederation of the insane.
+Something clacks off the archway by your head, and lands at your feet. An arrow. You wheel around, and your clearing vision reveals a collapsed catwalk spanning over the cell block below. On this perilous footing, two strange souls have joined forces against you: one in a guard’s uniform, the other in prisoner’s chains. A confederation of the insane.
 
 \subsection*{Victory Condition}
 Defeat both the Hollowed Guard and Hollowed Prisoner
 
 \subsection*{Doom Events}
 \begin{itemize}
-\item \textbf{Round 5:} \emph{The hollowed guard ditches its shield to the ground.} Remove \emph{Shield Up!} from the Hollowed Guard. Hollowed Guard will no longer commit \emph{Shield Up!} (ignore 2/5-A) and will commit \emph{Two-Handed Slash} instead of \emph{Guarded Attack} or \emph{Shield Ram}.
-\item \textbf{Round 6:} \emph{It seems that the hollowed prisoner has run out of arrows.} Hollowed Prisoner no longer attempts to maintain 5 tiles distance, and will commit \emph{Knife} instead of \emph{Shortbow}.
+\item \textbf{Round 5:} \emph{The hollowed guard ditches its shield to the ground.} Remove \emph{Shield Up!} from the Hollowed Guard. Hollowed Guard will no longer commit \emph{Shield Up!} and will commit \emph{Two-Handed Slash} instead of \emph{Guarded Attack} or \emph{Shield Ram}.
+\item \textbf{Round 6:} \emph{It seems that the hollowed prisoner has run out of arrows.} Hollowed Prisoner no longer attempts to maintain 5 tiles distance, and will now commit (Move. \emph{Knife}) for every encounter roll.
 \end{itemize}
 
 \subsection*{Encounter Tables}
@@ -21,8 +21,8 @@ Defeat both the Hollowed Guard and Hollowed Prisoner
 \multicolumn{1}{c|}{\textbf{2-5}} & 
 \multicolumn{1}{c}{\textbf{6}} \\
 Move. \emph{Two-Handed Slash} &
-\textbf{A:} \emph{Shield Up!} Move\newline \textbf{B:} Move. \emph{Guarded Attack}\newline \emph{This result is only exhausted after its third token} &
-\textbf{A:} \emph{Sudden. Shield Ram}\newline \textbf{B:} Move. \emph{Two-Handed Slash}
+\emph{Shield Up!} Move. \emph{Guarded Attack}\newline \emph{This result is only exhausted after its third token} &
+\textbf{A:} \emph{Sudden. Shield Ram}\newline \textbf{B:} Move. \emph{Guarded Attack}
 \end{tabular}
 \end{center}
 \end{tcolorbox}
@@ -35,14 +35,14 @@ Move. \emph{Two-Handed Slash} &
 \multicolumn{1}{c|}{\textbf{1}} & 
 \multicolumn{1}{c|}{\textbf{2-5}} & 
 \multicolumn{1}{c}{\textbf{6}} \\
-\textbf{A:} \emph{Take Aim. Shortbow}\newline
-\textbf{B:} Move &
+\textbf{A:} \emph{Aimed Shot}\newline
+\textbf{B:} Move. \emph{Shortbow} &
 Move. \emph{Shortbow}\newline \emph{This result is only exhausted after its third token} &
-\textbf{A:} \emph{Take Aim. Shortbow}\newline
-\textbf{B:} Move
+\textbf{A:} \emph{Aimed Shot}\newline
+\textbf{B:} Move. \emph{Shortbow} \\
 \end{tabular}
 \end{center}
-\textbf{Note:} If the Hollowed Prisoner were to commit \emph{Shortbow}, but the character is adjacent to Hollowed Prisoner, then resolve the \emph{Knife} attack instead.
+\textbf{Note:} If the Hollowed Prisoner were to commit \emph{Shortbow} or \emph{Aimed Shot}, but the character is adjacent to Hollowed Prisoner, then resolve the \emph{Knife} attack instead.
 \end{tcolorbox}
 
 \begin{tcolorbox}
@@ -55,7 +55,7 @@ Move. \emph{Shortbow}\newline \emph{This result is only exhausted after its thir
 {\large \textbf{Hollowed Guard}}\\\\
 \begin{tabular}{s s s}
 \textbf{HP:} 7 & \textbf{Move:} 3\\
-\textbf{P.DEF:} 1 & \textbf{PS:} 1 \\
+\textbf{PS:} 1 \\
 \textbf{Shield Def:} 1 & \textbf{Shield Stab:} 4 & \textbf{Shield Dur:} -\\
 \end{tabular}\\
 
@@ -70,7 +70,10 @@ Move. \emph{Shortbow}\newline \emph{This result is only exhausted after its thir
 \hrule
 \ \\
 \begin{tcolorbox}
-\textbf{Note:} Remember that the Hollowed Guard has a point of \textbf{P.DEF} and \textbf{PS} in addition to a shield. See the \emph{Sinks} entry of Encounter Concepts section in the corebook for details.
+\textbf{Note:} Remember that the Hollowed Guard has a point of \textbf{PS} in addition to a shield. Review the \emph{Sinks} and \emph{Shield Up!} entries in the Encounter Concepts section of the corebook to learn about these two important mechanics.
+\end{tcolorbox}
+\begin{tcolorbox}
+\textbf{Note:} Remember that whenever the Hollowed Guard commits \emph{Two-Handed Slash} it will lose its \emph{Shield Up!} token, even if the character commits \emph{Dodge!}
 \end{tcolorbox}
 \ \\
 \hrule
@@ -85,11 +88,14 @@ Move. \emph{Shortbow}\newline \emph{This result is only exhausted after its thir
 \textbf{Attacks:}
 \begin{itemize}
 \item \emph{Shortbow} - Deal 1 Pierce ranged damage to an entity that is within 2-5 tiles.
-\item \emph{Take Aim} - Increase the range of \emph{Shortbow} by 2 tiles this Turn. If the \emph{Shortbow} attack is made within the original range of 5 tiles, then it deals an additional 1 Pierce damage.
+\item \emph{Aimed Shot} - Commit \emph{Shortbow} with an increased range of 2-7 tiles. If the attack is made within the original range of 2-5 tiles, then it deals an additional 1 Pierce damage.
 \item \emph{Knife} - Deal 1 Pierce damage to an adjacent entity.
 \end{itemize}
 \hrule
 \ \\
+\begin{tcolorbox}
+\textbf{Note:} Entities always Move into range for their behavior’s first listed attack. In this case, the Hollow Prisoner will Move to shoot its bow across the pitfalls instead of taking the long way around like the Hollowed Guard. See ‘Resolving Enemy Behavior’ in the Entity Concepts section of the corebook for details.
+\end{tcolorbox}
 
 \subsection*{Encounter Map}
 \begin{center}
@@ -107,8 +113,14 @@ Move. \emph{Shortbow}\newline \emph{This result is only exhausted after its thir
 \item \textbf{Light Gray:} Half-Cover.
 \end{itemize}
 
+\vfill
+
 \begin{tcolorbox}
 \textbf{Hint:} Remember that the Vault action allows the character to leap over hazards and tiles of half-cover.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Hint:} Overcommitting to offense is a fool’s risk. Always leave some \textbf{SP} for reactions.
 \end{tcolorbox}
 
 \pagebreak
